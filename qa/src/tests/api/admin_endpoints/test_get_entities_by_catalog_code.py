@@ -12,8 +12,8 @@ from hamcrest import contains_string, empty, is_not
 @allure.story('admin_endpoints')
 def test_get_entities_by_catalog_code(is_http, is_db, mock_http, catalog_url, catalog_code, publish_id, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type publish_id: ulid

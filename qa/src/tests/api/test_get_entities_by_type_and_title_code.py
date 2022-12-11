@@ -33,7 +33,7 @@ def clear_tmp():
 def test_get_entity_by_type(is_http, entity_type, title_code, mock_http,
                             clear_tmp, entity_file):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
 
@@ -51,7 +51,7 @@ def test_get_entity_by_type(is_http, entity_type, title_code, mock_http,
 @allure.story('get_entity_by_type')
 def test_get_filter_property_by_type(is_http, title_code, mock_http, clear_tmp):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
 
@@ -85,7 +85,7 @@ def test_get_filter_property_by_type(is_http, title_code, mock_http, clear_tmp):
 ])
 def test_get_entity_by_type_and_tags(is_http, entity_type, title_code, tags, expected_tag_result):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     # FREYA-1007
@@ -111,7 +111,7 @@ def test_get_entity_by_type_and_tags(is_http, entity_type, title_code, tags, exp
 ])
 def test_get_entity_by_type_and_several_tags(is_http, entity_type, title_code, expected_amount):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     # FREYA-1007
@@ -133,7 +133,7 @@ def test_get_entity_by_type_and_several_tags(is_http, entity_type, title_code, e
 def test_get_entity_by_type_invalid_or_empty_tags(is_http, title_code,
                                                   tags, entity_type):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
 
@@ -155,7 +155,7 @@ def test_get_entity_by_type_invalid_or_empty_tags(is_http, title_code,
     ('ENTITLEMENT', 'entitlements.json')])
 def test_get_entity_by_type_language(is_http, clear_tmp, entity_type, title_code, mock_http, entity_file, language):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
 
@@ -176,7 +176,7 @@ def test_get_entity_by_type_language(is_http, clear_tmp, entity_type, title_code
 def test_get_entity_by_type_invalid_title_code(is_http, title_code, update_titles,
                                                entity_type):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
 

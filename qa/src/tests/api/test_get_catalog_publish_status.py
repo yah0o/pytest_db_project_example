@@ -15,8 +15,8 @@ from np_cats_qa.verifications import verify_publish_completed_with_status_in_db,
 @allure.story('get_publish_status')
 def test_get_publish_status_when_catalog_activated(is_http, is_db, catalog_url, catalog_code, publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type title_code: str
     :type transaction_id: str
@@ -49,9 +49,9 @@ def test_get_publish_status_when_catalog_activated(is_http, is_db, catalog_url, 
 def test_get_publish_status_when_catalog_terminated(is_http, is_db, catalog_url, catalog_code, catalog_code_next,
                                                     publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
-    :type mock_steps: np_cats_qa.steps.mock.steps.CatalogServiceMockSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
+    :type mock_steps: db_prj_qa.steps.mock.steps.CatalogServiceMockSteps
     :type catalog_url: str
     :type catalog_code: str
     :type catalog_code_next: str
@@ -91,8 +91,8 @@ def test_get_publish_status_when_catalog_publish_in_progress_pending_or_failed(i
                                                                                catalog_status, publish_id,
                                                                                catalog_url):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_code: str
     :type transaction_id: str
     :type catalog_id: int

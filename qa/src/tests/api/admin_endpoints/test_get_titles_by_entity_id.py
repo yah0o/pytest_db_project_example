@@ -13,8 +13,8 @@ from hamcrest import has_item, has_entry, empty
 @allure.story('admin_endpoints')
 def test_get_titles_by_entity_id(is_http, is_db, catalog_url, catalog_code, publish_id, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type publish_id: ulid
@@ -37,8 +37,8 @@ def test_get_titles_by_entity_id(is_http, is_db, catalog_url, catalog_code, publ
 @allure.story('admin_endpoints')
 def test_get_titles_by_not_exist_entity_id(is_http, is_db, catalog_url, catalog_code, publish_id, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type publish_id: ulid

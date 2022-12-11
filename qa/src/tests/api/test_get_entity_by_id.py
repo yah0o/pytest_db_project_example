@@ -16,8 +16,8 @@ from np_cats_qa.matchers import not_empty
 @allure.story('get_entity_by_id')
 def test_get_entity_by_id(is_http, is_db):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type title_code: str
     """
     entity = schemas.entity()
@@ -41,8 +41,8 @@ def test_get_entity_by_id(is_http, is_db):
 ])
 def test_failure_get_entity_by(is_http, is_db, id, code, entity_type_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type id: str
     :type code: http  status code
     """
@@ -71,8 +71,8 @@ def test_get_entity_with_set_name(is_http):
 @pytest.mark.parametrize('language', ["en", "ru", "zh_cn", "zh_sg", "zh_tw"])
 def test_get_entity_by_id_localized(is_http, is_db, language):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     """
     entity = schemas.entity()
     fields = schemas.fields()
@@ -100,8 +100,8 @@ def test_get_entity_by_id_localized(is_http, is_db, language):
 @pytest.mark.parametrize('language', ["en", "ru", "de", "fr"])
 def test_get_entity_by_id_localized_category(is_http, is_db, language):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     """
     storefront = schemas.storefront()
     fields = {k: v for k, v in storefront.items() if k not in {'metadata'}}
@@ -137,8 +137,8 @@ def test_get_entity_by_id_localized_category(is_http, is_db, language):
 @pytest.mark.parametrize('language', ["by", "es", "ar"])
 def test_get_entity_by_id_localized_category_not_exist_language(is_http, is_db, language):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     """
     storefront = schemas.storefront()
     fields = {k: v for k, v in storefront.items() if k not in {'metadata'}}

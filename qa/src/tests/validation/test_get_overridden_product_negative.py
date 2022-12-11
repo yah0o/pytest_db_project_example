@@ -18,7 +18,7 @@ from np_cats_qa.constants import CatalogTypes, CatalogError, PublishError
     (123, codes.bad)])
 def test_get_product_with_incorrect_catalog_code(is_http, title_code, catalog_code, expected_error):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     product_code = 'product_with_expired_promo'
@@ -45,7 +45,7 @@ def test_get_product_with_incorrect_catalog_code(is_http, title_code, catalog_co
     (123, codes.bad)])
 def test_get_product_with_incorrect_product_code(is_http, title_code, product_code, expected_error):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     promo_code = 'test_override_promo'
@@ -73,7 +73,7 @@ def test_get_product_with_incorrect_product_code(is_http, title_code, product_co
     (123, codes.bad)])
 def test_get_product_with_incorrect_promo_code(is_http, title_code, promo_code, expected_error):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     product_code = 'product_with_expired_promo'
@@ -101,7 +101,7 @@ def test_get_product_with_incorrect_promo_code(is_http, title_code, promo_code, 
     (123, codes.bad)])
 def test_get_product_with_incorrect_storefront_code(is_http, title_code, storefront_code, expected_error):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     product_code = 'product_with_expired_promo'

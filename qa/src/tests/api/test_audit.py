@@ -14,7 +14,7 @@ from np_cats_qa.verifications import verify_audit, verify_publish_completed_with
 def test_publish_audit(is_http, clickhouse_client, catalog_url, is_db,
                        title_code, catalog_code, publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type catalog_url: str
     :type catalog_code: str
     :type title_code: str

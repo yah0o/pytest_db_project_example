@@ -18,7 +18,7 @@ from np_cats_qa.constants import CatalogTypes, PublishError
 ])
 def test_get_product_with_promo(is_http, title_code, product_code, promo_code, storefront_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
 
@@ -37,7 +37,7 @@ def test_get_product_with_promo(is_http, title_code, product_code, promo_code, s
 @allure.story('test_get_overridden_product')
 def test_get_product_when_product_does_not_match_promo(is_http, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     product_code = 'test_product_xp'
@@ -61,7 +61,7 @@ def test_get_product_when_product_does_not_match_promo(is_http, title_code):
 @allure.story('test_get_overridden_product')
 def test_get_product_when_storefront_does_not_match_promo(is_http, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     product_code = 'test_product_discount_vc_price'
@@ -85,7 +85,7 @@ def test_get_product_when_storefront_does_not_match_promo(is_http, title_code):
 @allure.story('test_get_overridden_product')
 def test_get_product_with_several_fields_overridden(is_http, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     product_code = 'product_rm_with_categories'
@@ -118,7 +118,7 @@ def test_get_product_with_several_fields_overridden(is_http, title_code):
 @allure.story('test_get_overridden_product_by_new_promo')
 def test_get_product_with_several_fields_overridden_by_new_promo(is_http, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     # NEW LQO format FREYA-1168
@@ -154,7 +154,7 @@ def test_get_product_with_several_fields_overridden_by_new_promo(is_http, title_
 @allure.story('test_get_overridden_product_by_new_promo')
 def test_get_product_with_several_fields_overridden_by_new_promo_empty_limits(is_http, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     # NEW LQO format FREYA-1168
@@ -188,7 +188,7 @@ def test_get_product_with_several_fields_overridden_by_new_promo_empty_limits(is
 @allure.story('test_get_overridden_product')
 def test_get_product_with_several_overrides(is_http, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     product_code = 'test_product_discount_vc_and_real_price'

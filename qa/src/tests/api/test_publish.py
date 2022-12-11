@@ -22,9 +22,9 @@ new_catalog_id = random_id()
 @allure.story('publish')
 def test_publish(is_http, is_db, catalog_url, title_code, catalog_code, publish_id, mock_steps):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
-    :type mock_steps: np_cats_qa.steps.mock.steps.CatalogServiceMockSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
+    :type mock_steps: db_prj_qa.steps.mock.steps.CatalogServiceMockSteps
     :type catalog_url: str
     :type title_code: str
     :type catalog_code: str
@@ -61,8 +61,8 @@ def test_publish(is_http, is_db, catalog_url, title_code, catalog_code, publish_
 def test_publish_twice_with_the_same_catalog_and_publish_ids(is_http, is_db, catalog_url, title_code, catalog_code,
                                                              publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type title_code: str
     :type catalog_code: str
@@ -105,8 +105,8 @@ def test_publish_twice_with_the_same_catalog_and_publish_ids(is_http, is_db, cat
 def test_publish_twice_when_catalog_and_publish_id_do_not_match(is_http, is_db, catalog_url, catalog_code,
                                                                 catalog_code_next, publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type catalog_code_next: str
@@ -132,8 +132,8 @@ def test_publish_twice_when_catalog_and_publish_id_do_not_match(is_http, is_db, 
 def test_publish_new_catalog_and_check_old_terminated(is_http, is_db, catalog_url, title_code, mock_steps, catalog_code,
                                                       catalog_code_next, publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type title_code: str
     :type catalog_code: str
@@ -186,8 +186,8 @@ def test_publish_new_catalog_and_check_old_terminated(is_http, is_db, catalog_ur
 def test_publish_catalog_after_failed_status(is_http, is_db, mock_steps, catalog_url, title_code, catalog_code,
                                              publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type publish_id: str
@@ -223,9 +223,9 @@ def test_publish_catalog_after_failed_status(is_http, is_db, mock_steps, catalog
 @allure.story('publish_order')
 def test_publish_several_catalogs_for_one_title(is_http, is_db, catalog_url):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
-    :type mock_steps: np_cats_qa.steps.mock.steps.CatalogServiceMockSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
+    :type mock_steps: db_prj_qa.steps.mock.steps.CatalogServiceMockSteps
     :type catalog_url: str
     """
     # prepare
@@ -295,9 +295,9 @@ def test_publish_several_catalogs_for_one_title(is_http, is_db, catalog_url):
 ])
 def test_publish_when_critical_service_is_not_ready(is_http, is_db, catalog_url, publish_id, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
-    :type mock_steps: np_cats_qa.steps.mock.steps.CatalogServiceMockSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
+    :type mock_steps: db_prj_qa.steps.mock.steps.CatalogServiceMockSteps
     :type catalog_url: str
     """
 
@@ -327,9 +327,9 @@ def test_publish_when_critical_service_is_not_ready(is_http, is_db, catalog_url,
 def test_3_retry_on_prepare_timeout(is_http, is_db, catalog_url, mock_steps, publish_id,
                                     title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
-    :type mock_steps: np_cats_qa.steps.mock.steps.CatalogServiceMockSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
+    :type mock_steps: db_prj_qa.steps.mock.steps.CatalogServiceMockSteps
     :type catalog_url: str
     """
     mock_steps.journal_clear_history()
@@ -364,8 +364,8 @@ def test_3_retry_on_prepare_timeout(is_http, is_db, catalog_url, mock_steps, pub
 ])
 def test_publish_when_other_services_not_ready(is_http, is_db, catalog_url, publish_id, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     """
 
@@ -401,9 +401,9 @@ def test_publish_when_entity_was_changed_but_same_id(is_http, is_db, catalog_cod
                                                      mock_steps,
                                                      yaml_config):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
-    :type mock_steps: np_cats_qa.steps.mock.steps.CatalogServiceMockSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
+    :type mock_steps: db_prj_qa.steps.mock.steps.CatalogServiceMockSteps
     :type catalog_code: str
     :type publish_id: str
     """
@@ -432,9 +432,9 @@ def test_publish_when_entity_was_changed_but_same_id(is_http, is_db, catalog_cod
 def test_publish_with_the_same_code_but_different_content(is_http, is_db, catalog_code, publish_id, mock_steps,
                                                           yaml_config):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
-    :type mock_steps: np_cats_qa.steps.mock.steps.CatalogServiceMockSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
+    :type mock_steps: db_prj_qa.steps.mock.steps.CatalogServiceMockSteps
     :type catalog_code: str
     :type publish_id: str
     """
@@ -523,8 +523,8 @@ def test_v2_publish_version_for_new_title(is_http, is_db, catalog_url, wows_titl
 ])
 def test_publish_v2_when_other_services_not_ready(is_http, is_db, catalog_url, publish_id, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     """
 
@@ -545,8 +545,8 @@ def test_publish_v2_when_other_services_not_ready(is_http, is_db, catalog_url, p
 def test_v2_publish_catalog_after_failed_status(is_http, is_db, mock_steps, catalog_url, title_code, catalog_code,
                                                 publish_id, catalog_code_next):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type publish_id: str
@@ -586,8 +586,8 @@ def test_v2_publish_catalog_after_failed_status(is_http, is_db, mock_steps, cata
 def test_publish_v2_twice(is_http, is_db, catalog_url, title_code, mock_steps,
                           publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type title_code: str
     :type catalog_code: str
@@ -661,8 +661,8 @@ def test_publish_v2_with_same_publish_id(is_http, is_db, catalog_url, title_code
 def test_publish_v2_invalid_catalog_url(is_http, is_db, catalog_url, title_code, mock_steps,
                                         publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type title_code: str
     :type catalog_code: str
@@ -692,9 +692,9 @@ def test_publish_v2_invalid_catalog_url(is_http, is_db, catalog_url, title_code,
 ])
 def test_publish_v2_when_critical_service_is_not_ready(is_http, is_db, catalog_url, publish_id, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
-    :type mock_steps: np_cats_qa.steps.mock.steps.CatalogServiceMockSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
+    :type mock_steps: db_prj_qa.steps.mock.steps.CatalogServiceMockSteps
     :type catalog_url: str
     """
 

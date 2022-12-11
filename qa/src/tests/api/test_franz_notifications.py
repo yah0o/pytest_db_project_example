@@ -15,9 +15,9 @@ from requests import codes
 @allure.story('franz_success')
 def test_success_event(is_http, is_db, catalog_url, title_code, catalog_code, publish_id, mock_steps):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
-    :type mock_steps: np_cats_qa.steps.mock.steps.CatalogServiceMockSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
+    :type mock_steps: db_prj_qa.steps.mock.steps.CatalogServiceMockSteps
     :type catalog_url: str
     :type title_code: str
     :type catalog_code: str
@@ -52,8 +52,8 @@ def test_success_event(is_http, is_db, catalog_url, title_code, catalog_code, pu
 ])
 def test_failure(is_http, is_db, catalog_url, title_code, error_code, publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type title_code: str
     :type catalog_code: str

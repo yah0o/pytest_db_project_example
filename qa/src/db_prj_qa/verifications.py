@@ -167,7 +167,7 @@ def verify_wiremock_request(mock_steps, request_url, template_file, template_par
                     'Different request to JSON schema is expected (schema is {})'.format(request_json_schema))
 
     data_folder = Path(os.getcwd().split('src')[0])
-    file = data_folder / ("src/np_cats_qa/steps/mock/request_templates/" + template_file)
+    file = data_folder / ("src/db_prj_qa/steps/mock/request_templates/" + template_file)
     with open(file) as f:
         request_template = Template(f.read()).substitute(template_params)
     wiremock_expected_request_body = json.loads(request_template)

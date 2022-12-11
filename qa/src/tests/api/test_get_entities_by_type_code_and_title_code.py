@@ -25,7 +25,7 @@ from np_cats_qa.verifications import verify_failed_response
 def test_get_entity_by_type_and_code(is_http, mock_http, clear_tmp, entity_type, entity_code, title_code,
                                      code_field, entity_file):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
 
@@ -56,8 +56,8 @@ def test_get_entity_by_type_and_code(is_http, mock_http, clear_tmp, entity_type,
 def test_get_entity_by_type_and_code_negative(is_http, entity_type, entity_code,
                                               title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type title_code: str
     """
 
@@ -76,7 +76,7 @@ def test_get_entity_by_type_and_code_negative(is_http, entity_type, entity_code,
 def test_get_entity_by_type_and_code_localization(is_http, mock_http, entity_type, entity_code, title_code, entity_file,
                                                   language):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     extract_path = 'tmp/'
@@ -125,7 +125,7 @@ def test_get_entity_by_type_and_code_localization(is_http, mock_http, entity_typ
 def test_get_entities_by_type_code_and_invalid_title_code(is_http, title_code, update_titles
                                                           ):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
 

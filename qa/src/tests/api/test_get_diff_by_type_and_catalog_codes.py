@@ -64,7 +64,7 @@ def destination_catalog_code(is_http, yaml_config, is_db):
 def test_get_initial_diff(is_http, entity_type, mock_http, clear_tmp, entity_file,
                           get_active_catalog_code_by_title_code, fields):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
 
     # FREYA-843 - get single catalog tests
@@ -106,7 +106,7 @@ def test_get_initial_diff(is_http, entity_type, mock_http, clear_tmp, entity_fil
 def test_get_initial_diff_with_paging(is_http, entity_type, mock_http, clear_tmp, entity_file,
                                       get_active_catalog_code_by_title_code, limit):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
 
     extract_path = 'tmp/'
@@ -154,7 +154,7 @@ def test_get_initial_diff_with_paging(is_http, entity_type, mock_http, clear_tmp
 def test_get_initial_diff_with_fields(is_http, entity_type, yaml_config, destination_catalog_code,
                                       get_active_catalog_code_by_title_code, fields, entity_count):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
     response = is_http.cats.get_initial_diff_by_type_and_catalog_code(
         destination_catalog_code=get_active_catalog_code_by_title_code,
@@ -170,7 +170,7 @@ def test_get_initial_diff_with_fields(is_http, entity_type, yaml_config, destina
 def test_get_initial_diff_none_fields_should_pass(is_http, mock_http, clear_tmp,
                                                   get_active_catalog_code_by_title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
 
     # Response should get fields with None parameter
@@ -201,7 +201,7 @@ def test_get_initial_diff_none_fields_should_pass(is_http, mock_http, clear_tmp,
 def test_get_diff(is_http, entity_type, mock_http, yaml_config, destination_catalog_code, source_catalog_code,
                   create_total, update_total, delete_total):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
 
     generate_catalog_url(yaml_config, CatalogZIP.UPDATED_CATALOG)
@@ -243,8 +243,8 @@ def test_get_diff(is_http, entity_type, mock_http, yaml_config, destination_cata
 def test_get_diff_with_fields(is_http, entity_type, yaml_config, destination_catalog_code,
                               source_catalog_code, fields, entity_count):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     """
 
     generate_catalog_url(yaml_config, CatalogZIP.UPDATED_CATALOG)
@@ -275,7 +275,7 @@ def test_get_diff_with_fields(is_http, entity_type, yaml_config, destination_cat
 def test_get_diff_with_paging(is_http, entity_type, yaml_config, destination_catalog_code,
                               source_catalog_code, limit, entity_count):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
 
     generate_catalog_url(yaml_config, CatalogZIP.UPDATED_CATALOG)
@@ -320,7 +320,7 @@ def test_get_diff_with_paging(is_http, entity_type, yaml_config, destination_cat
 def test_failure_diff_with_paging(is_http, title_code, code, yaml_config, entity_type, last_id, diff_type,
                                   get_active_catalog_code_by_title_code, source_catalog_code, entity_type_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     :type id: str
     :type code: http  status code

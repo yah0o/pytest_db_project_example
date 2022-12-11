@@ -20,9 +20,9 @@ from np_cats_qa.verifications import verify_terminated_catalog_in_db, \
 @pytest.mark.parametrize('migrate_twice', [True, False])
 def test_migrate(is_http, is_db, catalog_url, migrate_twice):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
-    :type mock_steps: np_cats_qa.steps.mock.steps.CatalogServiceMockSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
+    :type mock_steps: db_prj_qa.steps.mock.steps.CatalogServiceMockSteps
     :type catalog_url: str
     :type catalog_code: str
     """
@@ -46,8 +46,8 @@ def test_migrate(is_http, is_db, catalog_url, migrate_twice):
 @allure.story('migrate')
 def test_migrate_update_terminated_at(is_http, is_db, catalog_url):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type title_catalog_code: str
     """
@@ -105,8 +105,8 @@ def test_migrate_update_terminated_at(is_http, is_db, catalog_url):
                          ])
 def test_migrate_negative(is_http, catalog_url, catalog_code, activated_at, terminated_at):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type mock_steps: np_cats_qa.steps.mock.steps.CatalogServiceMockSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type mock_steps: db_prj_qa.steps.mock.steps.CatalogServiceMockSteps
     :type catalog_url: str
     :type catalog_code: str
     """
@@ -120,8 +120,8 @@ def test_migrate_negative(is_http, catalog_url, catalog_code, activated_at, term
 @allure.story('migrate')
 def test_publish_new_catalog_and_check_old_terminated(is_http, is_db, catalog_url, mock_steps, publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     """
     mock_steps.journal_clear_history()

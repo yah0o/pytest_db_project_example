@@ -13,7 +13,7 @@ from np_cats_qa.matchers import not_empty
 @allure.story('active_catalogs')
 def test_get_active_catalog_default(is_http, is_db, get_active_catalog_code_by_title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :return: MAIN active catalogs by default (see FREYA-758)
     """
 
@@ -77,7 +77,7 @@ def test_get_active_catalog_filter_by_type(is_http, is_db, catalog_type, ctype, 
 @allure.story('active_catalogs')
 def test_get_active_catalog_etag(is_http):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
 
     response_with_etag = is_http.cats.get_active_catalog('MAIN')

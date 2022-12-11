@@ -19,7 +19,7 @@ from requests import codes
 ])
 def test_get_publish_status_with_invalid_catalog_publish_id(is_http, publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type catalog_publish_id: int
     """
 
@@ -38,7 +38,7 @@ def test_get_publish_status_with_invalid_catalog_publish_id(is_http, publish_id)
 ])
 def test_get_catalog_publish_status_when_catalog_publish_id_missing(is_http, publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type catalog_publish_id: int
     """
     publish_status_response = is_http.cats.get_catalog_publish_status(publish_id)

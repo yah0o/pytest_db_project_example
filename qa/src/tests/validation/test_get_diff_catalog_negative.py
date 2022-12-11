@@ -66,8 +66,8 @@ def destination_catalog_code(is_http, yaml_config, is_db):
 ])
 def test_get_initial_diff_required_validation(is_http, mock_http, destination_catalog_code, entity_type, error, description):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     """
 
     # FREYA-843 - get single catalog tests
@@ -98,8 +98,8 @@ def test_get_initial_diff_fields_validation_should_pass(is_http, is_db, mock_htt
                                                         get_active_catalog_code_by_title_code, fields,
                                                         fields_result):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     """
 
     # Should passed with empty list of fields in response
@@ -126,8 +126,8 @@ def test_get_initial_diff_fields_validation_should_pass(is_http, is_db, mock_htt
 def test_get_initial_diff_with_paging_validation(is_http, is_db, mock_http,
                                                  get_active_catalog_code_by_title_code, limit, error):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     """
 
     response = is_http.cats.get_initial_diff_by_type_and_catalog_code(
@@ -168,8 +168,8 @@ def test_get_diff_required_validation(is_http, entity_type, yaml_config, dest_ca
                                       src_catalog_code, error, description
                                       ):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     """
 
     response = is_http.cats.get_diff_by_type_and_catalog_code(
@@ -194,8 +194,8 @@ def test_get_diff_required_validation(is_http, entity_type, yaml_config, dest_ca
 def test_get_diff_with_fields_validation_should_pass(is_http, yaml_config, destination_catalog_code,
                                                      source_catalog_code, fields, fields_result):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     """
 
     generate_catalog_url(yaml_config, CatalogZIP.UPDATED_CATALOG)
@@ -219,8 +219,8 @@ def test_get_diff_with_fields_validation_should_pass(is_http, yaml_config, desti
 ])
 def test_get_diff_with_paging_validation(is_http, limit, error):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     """
 
     response = is_http.cats.get_diff_by_type_and_catalog_code(

@@ -8,17 +8,14 @@ __version__ = '1.1.0'
 setup(
     name='np-cats-qa',
     version=__version__,
-    packages=find_namespace_packages(include=['np_cats_qa', 'np_cats_qa.*'],
-                                     exclude=['np_cats_qa.steps.db', 'np_cats_qa.steps.mock']),
+    packages=find_namespace_packages(include=['db_prj_qa', 'db_prj_qa.*'],
+                                     exclude=['db_prj_qa.steps.db', 'db_prj_qa.steps.mock']),
     include_package_data=True,
     author='',
     author_email='a_agafonov@test.com',
     url='[url]',
     install_requires=[
-        'ulid2>=0.2.0',
-        'npqa-http>=2.0.0',
-        'npqa-report>=2.0.0',
-        'capi-lib-python>=2.4.2',
+        'ulid2>=0.2.0'
     ]
 
 )

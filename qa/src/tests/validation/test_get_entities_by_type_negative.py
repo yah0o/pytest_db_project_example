@@ -15,7 +15,7 @@ from np_cats_qa.constants import CatalogZIP, EntityType, CatalogError
 def test_get_entity_by_type_negative(is_http, entity_type, title_code, get_active_catalog_code_by_title_code,
                                      by_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     if by_code is 'title_code':
@@ -33,7 +33,7 @@ def test_get_entity_by_type_and_catalog_code_empty_or_invalid_language(is_http, 
                                                                        clear_tmp, get_active_catalog_code_by_title_code,
                                                                        language):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
     entity_type = 'CURRENCY'
     extract_path = 'tmp/'
@@ -51,7 +51,7 @@ def test_get_entity_by_type_and_catalog_code_empty_or_invalid_language(is_http, 
 @pytest.mark.parametrize('language', ['not_exist', 1, None, '', True])
 def test_get_entity_by_type_and_code_localization_invalid_language(is_http, title_code, language):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     entity_type = 'STOREFRONT'

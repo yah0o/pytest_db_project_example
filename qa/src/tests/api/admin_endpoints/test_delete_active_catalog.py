@@ -14,8 +14,8 @@ from np_cats_qa.verifications import verify_publish_states_in_db, verify_failed_
 @allure.story('active_catalog')
 def test_delete_active_catalog_by_title_code_default(is_http, is_db, catalog_url, title_code, catalog_code, publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type title_code: str
@@ -49,8 +49,8 @@ def test_delete_active_catalog_by_title_code_default(is_http, is_db, catalog_url
 @allure.story('active_catalog')
 def test_delete_active_catalog_by_title_code_with_no_active_catalogs(is_http, is_db, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type title_code: str
     """
 

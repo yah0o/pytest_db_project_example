@@ -15,7 +15,7 @@ from tests.conftest import get_active_catalog_code_by_title_code
 @allure.story('active_catalogs_by_title_code')
 def test_get_active_catalogs_by_title_code_default(is_http, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
     # FREYA-757
@@ -65,7 +65,7 @@ def test_get_active_catalogs_filter_by_type(is_http, catalog_type, regexp, title
 @pytest.mark.parametrize('title_code', ['not_exist', 'ru.inactive', 'ru.inactive_db'])
 def test_get_active_catalogs_by_not_existing_title_code(is_http, title_code, update_titles):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_not_exist: str
     """
 

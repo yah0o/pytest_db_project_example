@@ -16,8 +16,8 @@ from np_cats_qa.verifications import verify_publish_states_in_db, verify_failed_
 @allure.story('active_catalog')
 def test_get_active_catalog_by_title_code_default(is_http, is_db, catalog_url, title_code, catalog_code, publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type title_code: str
@@ -55,8 +55,8 @@ def test_get_active_catalog_by_title_code_filter_by_type(is_http, is_db, catalog
                                                          publish_id,
                                                          catalog_type, tool_name, regexp):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type title_code: str
@@ -89,7 +89,7 @@ def test_get_active_catalog_by_title_code_filter_by_type(is_http, is_db, catalog
 @allure.story('active_catalog')
 def test_get_active_catalog_by_title_code_with_no_catalogs(is_http):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
 
     # get activate catalog for title without catalog
@@ -104,7 +104,7 @@ def test_get_active_catalog_by_title_code_with_no_catalogs(is_http):
 @pytest.mark.parametrize('title_code', ['not_exist', 'ru.inactive', 'ru.inactive_db'])
 def test_get_active_catalog_by_not_existing_title_code(is_http, title_code, update_titles):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_not_exist: str
     """
 
@@ -119,8 +119,8 @@ def test_get_active_catalog_by_not_existing_title_code(is_http, title_code, upda
 def test_get_active_catalog_when_no_active(is_http, is_db, catalog_url, title_code, catalog_publish_id, catalog_id,
                                            catalog_code, publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type title_code: str
     :type catalog_publish_id: int
@@ -146,8 +146,8 @@ def test_get_active_catalog_when_no_active(is_http, is_db, catalog_url, title_co
 @allure.story('active_catalog')
 def test_get_active_catalog_when_it_failed(is_http, is_db, title_for_failed_publish, publish_id, yaml_config):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type title_for_failed_publish: str
     """
     # publish catalog

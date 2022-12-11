@@ -32,7 +32,7 @@ def test_get_entity_by_type_code_and_catalog_code(is_http, entity_type, entity_c
                                                   title_code, mock_http, get_active_catalog_code_by_title_code,
                                                   clear_tmp, code_field, entity_file):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
 
@@ -65,7 +65,7 @@ def test_get_entity_by_type_code_and_catalog_code(is_http, entity_type, entity_c
 def test_get_entity_by_type_code_and_catalog_code_negative(is_http, entity_type, entity_code, title_code,
                                                            get_active_catalog_code_by_title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type title_code: str
     """
 
@@ -91,7 +91,7 @@ def test_get_entity_by_type_code_case_sensitive_and_catalog_code(is_http, entity
                                                                  mock_http, get_active_catalog_code_by_title_code,
                                                                  clear_tmp, code_field, entity_file):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
 
     extract_path = 'tmp/'

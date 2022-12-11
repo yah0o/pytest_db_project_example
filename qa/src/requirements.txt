@@ -1,5 +1,5 @@
---index-url [path to index url]
---extra-index-url [path to extra index url]
+--index-url  #[path to index url]
+--extra-index-url  #[path to extra index url]
 
 allure-pytest==2.5.3
 jsonschema==2.6.0
@@ -14,13 +14,3 @@ Flask-SQLAlchemy==2.0
 pytest-lazy-fixture==0.6.3
 msgpack-python==0.5.6
 ulid2==0.2.0
-
-# internal
-npqa-http==2.0.0
-npqa-db==1.0.1
-npqa-matchers[jsonpath]==1.3.0
-npqa-mock==1.1.3
-npqa-report==2.0.0
-paudit-qa==1.0.1
-pytest-yaml-config==1.4.0
-capi-lib-python==2.4.6

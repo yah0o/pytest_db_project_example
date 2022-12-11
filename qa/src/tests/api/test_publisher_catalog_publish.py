@@ -29,9 +29,9 @@ def test_publisher_catalog_publish(is_http, is_db, catalog_url, publish_catalog_
                                    mock_steps, catalog_type,
                                    tool_name):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
-    :type mock_steps: np_cats_qa.steps.mock.steps.CatalogServiceMockSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
+    :type mock_steps: db_prj_qa.steps.mock.steps.CatalogServiceMockSteps
     :type catalog_url: str
     :type publish_title_code: str
     :type catalog_code: str
@@ -81,8 +81,8 @@ def test_publisher_catalog_publish_twice_with_the_same_catalog_and_publish_ids(i
                                                                                catalog_code,
                                                                                publish_id, catalog_type, tool_name):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type title_code: str
     :type catalog_code: str
@@ -136,8 +136,8 @@ def test_publisher_catalog_publish_new_catalog_and_check_old_terminated(is_http,
                                                                         nxt_catalog_code, publish_id, catalog_type,
                                                                         tool_name):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type title_code: str
     :type catalog_code: str
@@ -210,8 +210,8 @@ def test_publisher_catalog_publish_catalog_after_failed_status(is_http, is_db, m
                                                                catalog_code,
                                                                publish_id, catalog_type, tool_name):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type publish_id: str
@@ -266,8 +266,8 @@ def test_publisher_catalog_publish_catalog_after_failed_status(is_http, is_db, m
 def test_publisher_catalog_publish_when_critical_service_is_not_ready(is_http, is_db, catalog_url, publish_id,
                                                                       catalog_code, title_code, error_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     """
     # publish catalog
@@ -296,9 +296,9 @@ def test_publisher_catalog_publish_when_critical_service_is_not_ready(is_http, i
 @allure.story('publisher_catalog_publish')
 def test_publisher_catalog_publish_truncated_error_message(is_http, is_db, catalog_url, mock_steps, publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
-    :type mock_steps: np_cats_qa.steps.mock.steps.CatalogServiceMockSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
+    :type mock_steps: db_prj_qa.steps.mock.steps.CatalogServiceMockSteps
     :type catalog_url: str
     """
     title_code = TitleCode.PUBLISH_NEGATIVE

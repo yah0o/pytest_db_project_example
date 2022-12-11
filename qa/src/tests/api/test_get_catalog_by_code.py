@@ -18,8 +18,8 @@ from np_cats_qa.verifications import verify_publish_completed_with_status_in_db,
 @allure.story('get_catalog_by_code')
 def test_get_catalog_by_code(is_http, is_db, mock_http, clear_tmp, catalog_url, title_code, catalog_code, publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type title_code: str
@@ -51,8 +51,8 @@ def test_get_catalog_by_code(is_http, is_db, mock_http, clear_tmp, catalog_url, 
 def test_get_catalog_by_code_when_catalog_updated(is_http, is_db, catalog_url, catalog_code, publish_id, mock_http,
                                                   yaml_config):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type publish_id: str
@@ -86,7 +86,7 @@ def test_get_catalog_by_code_when_catalog_updated(is_http, is_db, catalog_url, c
 @allure.story('get_catalog_by_code')
 def test_get_catalog_by_code_when_not_found(is_http, catalog_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type catalog_code: str
     """
 
@@ -102,9 +102,9 @@ def test_get_catalog_by_code_when_not_found(is_http, catalog_code):
 @allure.story('get_catalog_by_code')
 def test_get_catalog_by_code_when_publish_failed(is_http, yaml_config, catalog_code, publish_id, is_db, mock_steps):
     """
-     :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
-    :type mock_steps: np_cats_qa.steps.mock.steps.CatalogServiceMockSteps
+     :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
+    :type mock_steps: db_prj_qa.steps.mock.steps.CatalogServiceMockSteps
     :type catalog_code: str
     :type publish_id: ulid
     """

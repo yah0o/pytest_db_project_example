@@ -15,8 +15,8 @@ from np_cats_qa.verifications import verify_publish_completed_with_status_in_db
 @allure.story('tsc_endpoints')
 def test_get_entitlements_map(is_http, is_db, yaml_config, catalog_url, catalog_code, publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type publish_id: ulid

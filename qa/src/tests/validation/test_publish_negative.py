@@ -21,8 +21,8 @@ from requests import codes
 def test_publish_with_invalid_url(is_http, is_db, publish_id, url, status_code,
                                   error_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type publish_id: str
     """
 
@@ -51,7 +51,7 @@ def test_publish_with_invalid_url(is_http, is_db, publish_id, url, status_code,
 def test_publish_with_invalid_title_instance_code(is_http, catalog_publish_id, catalog_id, catalog_url,
                                                   title_instance_code, error_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type catalog_url: str
     :type catalog_publish_id: int
     :type catalog_id: int
@@ -79,7 +79,7 @@ def test_publish_with_invalid_title_instance_code(is_http, catalog_publish_id, c
 ])
 def test_publish_with_invalid_catalog_id(is_http, publish_id, catalog_url, catalog_code, error_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type catalog_url: str
     :type catalog_code: str
     :type publish_id: str
@@ -104,7 +104,7 @@ def test_publish_with_invalid_catalog_id(is_http, publish_id, catalog_url, catal
 def test_publish_with_invalid_catalog_publish_id(is_http, publish_id, catalog_url,
                                                  catalog_code, error_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type catalog_url: str
     :type catalog_code: str
     :type publish_id: int
@@ -125,7 +125,7 @@ def test_publish_with_invalid_catalog_publish_id(is_http, publish_id, catalog_ur
 def test_publish_when_required_parameter_missing(is_http, publish_id, catalog_url, catalog_code,
                                                  missing_parameter):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     :type catalog_url: str
     :type catalog_id: int
     :type catalog_publish_id: int

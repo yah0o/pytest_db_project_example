@@ -30,7 +30,7 @@ def clear_tmp():
 def test_get_entity_by_type_and_catalog_code(is_http, entity_type, mock_http,
                                              clear_tmp, entity_file, get_active_catalog_code_by_title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
 
     extract_path = 'tmp/'
@@ -50,8 +50,8 @@ def test_get_entity_by_type_and_catalog_code(is_http, entity_type, mock_http,
 def test_get_filter_property_by_type_and_catalog_code(is_http, mock_http, clear_tmp,
                                                       get_active_catalog_code_by_title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     """
 
     extract_path = 'tmp/'
@@ -86,7 +86,7 @@ def test_get_entity_by_type_and_catalog_code_language(is_http, entity_type, mock
                                                       clear_tmp, entity_file, get_active_catalog_code_by_title_code,
                                                       language):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
 
     extract_path = 'tmp/'
@@ -108,7 +108,7 @@ def test_get_entity_by_type_and_catalog_code_empty_language(is_http, mock_http,
                                                             clear_tmp, get_active_catalog_code_by_title_code
                                                             ):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
     entity_type = 'CURRENCY'
     extract_path = 'tmp/'

@@ -12,7 +12,7 @@ cats:
     client_emitter_id: "123456789"
     stable_capi: "[path to artifact]"
     unstable_capi: "[path to artifact]"
-    draft_capi_path: "./np_cats_qa/data/contracts"
+    draft_capi_path: "./db_prj_qa/data/contracts"
     app_id: cats
     rabbit:
       host: localhost

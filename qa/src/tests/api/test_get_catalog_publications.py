@@ -17,8 +17,8 @@ from np_cats_qa.verifications import verify_publish_completed_with_status_in_db,
 def test_get_catalog_publications_activated(is_http, is_db, catalog_url, title_code, catalog_code,
                                             publish_id):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type title_code: str
@@ -50,8 +50,8 @@ def test_get_catalog_publications_activated(is_http, is_db, catalog_url, title_c
 def test_get_catalog_publications_terminated(is_http, is_db, catalog_url, title_code, catalog_code,
                                              publish_id, catalog_code_next):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type title_code: str
@@ -94,8 +94,8 @@ def test_get_catalog_publications_terminated(is_http, is_db, catalog_url, title_
 def test_get_catalog_publications_other_statuses(is_http, is_db, catalog_code, catalog_status,
                                                  publish_id, catalog_url, title_code):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
-    :type is_db: np_cats_qa.steps.db.steps.CatalogServiceDBSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
+    :type is_db: db_prj_qa.steps.db.steps.CatalogServiceDBSteps
     :type catalog_url: str
     :type catalog_code: str
     :type title_code: str
@@ -136,7 +136,7 @@ def test_get_catalog_publications_other_statuses(is_http, is_db, catalog_code, c
                                                 (0, 0)])
 def test_get_catalog_publications_with_limit(is_http, title_code, limit, total_limit):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
     # default value for limit is 50 [When None]
     # get catalog publications by title_code
@@ -154,7 +154,7 @@ def test_get_catalog_publications_with_limit(is_http, title_code, limit, total_l
 @allure.story('get_catalog_publications_validation')
 def test_get_catalog_publications_with_missed_title_code(is_http):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
     # default value for limit is 50 [When None]
     # get catalog publications by title_code
@@ -170,7 +170,7 @@ def test_get_catalog_publications_with_missed_title_code(is_http):
                                                         ('test', PublishError.CLIENT_ERROR, codes.bad_request)])
 def test_get_catalog_publications_with_invalid_limit(is_http, title_code, limit, error, status_codes):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
     # default value for limit is 50 [When None]
     # get catalog publications by title_code
@@ -189,7 +189,7 @@ def test_get_catalog_publications_with_invalid_limit(is_http, title_code, limit,
                          ])
 def test_get_catalog_publications_by_invalid_title_code(is_http, title_code, error, status_codes):
     """
-    :type is_http: np_cats_qa.steps.http.CatalogServiceHttpSteps
+    :type is_http: db_prj_qa.steps.http.CatalogServiceHttpSteps
     """
     # get catalog publications by title_code
     get_catalog_publications = is_http.cats.get_catalog_publications(title_code)
