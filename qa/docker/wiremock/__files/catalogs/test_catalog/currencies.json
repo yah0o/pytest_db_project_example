@@ -1,0 +1,106 @@
+[
+    {
+        "currency_id": "bb08dfc6-bd26-418d-bebe-38eea8e69662",
+        "metadata": {},
+        "currency_code": "gold",
+        "type": "VIRTUAL",
+        "friendly_name": "Test Gold",
+        "fraction_digit_count": 0,
+        "active": true,
+        "reported": true,
+        "exchange": {
+            "USD": {
+                "min": "1",
+                "max": "100000",
+                "default": "1000",
+                "step": 1,
+                "type": "NA_TRILOGY"
+            }
+        }
+    },
+    {
+        "currency_id": "4b29bd58-8f41-4e44-8cd7-6c8669aab630",
+        "metadata": {},
+        "currency_code": "credits",
+        "type": "VIRTUAL",
+        "friendly_name": "silver coins from tanks",
+        "fraction_digit_count": 0,
+        "active": false,
+        "reported": true,
+        "exchange": {}
+    },
+    {
+        "currency_id": "a1c9e64a-e2cc-4282-830d-69181afa79cf",
+        "metadata": {},
+        "currency_code": "xp",
+        "type": "VIRTUAL",
+        "friendly_name": "Test XP",
+        "fraction_digit_count": 0,
+        "active": true,
+        "reported": true,
+        "exchange": {}
+    },
+    {
+      "currency_code":"sacoin",
+      "type":"VIRTUAL",
+      "friendly_name":"sacoin",
+      "reported":true,
+      "fraction_digit_count":0,
+      "metadata":{
+         "wot":{
+            "type":{
+               "data":"custom/sacoin",
+               "@type":"String"
+            }
+         }
+      },
+      "created_at":"2021-10-22T07:46:54.876444Z",
+      "updated_at":"2021-10-22T07:46:54.876923Z",
+      "active":true,
+      "localizations":{
+         "title":{
+            "ru":{
+               "value":"\u041d\u0430\u0433\u0440\u0430\u0434\u043d\u0430\u044f \u043c\u043e\u043d\u0435\u0442\u0430"
+            },
+             "zh-cn": {
+                 "value": "球员资历"
+             },
+            "de":{
+               "value":"Seniorität der Spieler"
+            },
+            "en":{
+               "value":"Player seniority"
+            },
+            "zh-tw":{
+               "value":"\u7121\u610f\u7fa9\u7684\u8a71"
+            }
+         }
+      },
+      "mediafiles":{
+         "image_large":{
+            "value":{
+               "url":"https://catoolwebdav-wgt.wgtest.net/catool/11b617bc88c8c4e44d3f8220d22f8953.png",
+               "mediatype":"image",
+               "preview_url":null
+            }
+         },
+         "image_small":{
+            "value":{
+               "url":"https://catoolwebdav-wgt.wgtest.net/catool/84b343c6fc7cbda5db30097e6e03fd70.png",
+               "mediatype":"image",
+               "preview_url":null
+            }
+         },
+         "sacoin_40":{
+            "value":{
+               "url":"https://catoolwebdav-wgt.wgtest.net/catool/79264679dd36a48a6710ca9f4f968893.png",
+               "mediatype":"image",
+               "preview_url":null
+            }
+         }
+      },
+      "currency_id":"017ca6f8-34bf-3787-9a9e-586647f2b062",
+      "exchange":{
+      }
+   }
+]

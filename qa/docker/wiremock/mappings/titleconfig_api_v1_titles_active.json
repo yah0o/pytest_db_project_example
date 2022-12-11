@@ -1,0 +1,426 @@
+{
+  "scenarioName": "return titles",
+  "requiredScenarioState": "Started",
+  "newScenarioState": "inactive",
+  "request": {
+    "method": "GET",
+    "url": "/titleconfig/api/v1/titles"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "titles": [
+        {
+          "title_id": 1,
+          "access": true,
+          "state": true,
+          "id": 8388608101,
+          "friendly_name": "World of Warships",
+          "code": "ru.wows",
+          "pgn": "wows",
+          "pop": "ru",
+          "type": "game",
+          "public": true,
+          "shared_titles": [
+            838860104
+          ]
+        },
+        {
+          "title_id": 2,
+          "access": true,
+          "state": true,
+          "id": 8388608102,
+          "friendly_name": "World of Warplanes",
+          "code": "ru.wowp",
+          "pgn": "wowp",
+          "pop": "ru",
+          "type": "game",
+          "region": "ru",
+          "public": true,
+          "shared_titles": [
+            838860104,
+            838860113
+          ]
+        },
+        {
+          "title_id": 3,
+          "access": true,
+          "state": true,
+          "id": 838860103,
+          "friendly_name": "World of Tanks Blitz",
+          "code": "ru.wotb",
+          "pgn": "wotb",
+          "pop": "ru",
+          "type": "game",
+          "public": true,
+          "shared_titles": []
+        },
+        {
+          "title_id": 4,
+          "access": false,
+          "state": true,
+          "id": 838860104,
+          "friendly_name": "Shared Premium",
+          "code": "ru.shared_premium",
+          "pgn": "shared_premium",
+          "pop": "ru",
+          "type": "shared",
+          "public": false,
+          "shared_titles": []
+        },
+        {
+          "title_id": 5,
+          "access": true,
+          "state": true,
+          "id": 838872105,
+          "friendly_name": "Network Platform Integration Test Game",
+          "code": "ru.nptst",
+          "pgn": "nptst",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": [
+            838860104,
+            838860113
+          ]
+        },
+        {
+          "title_id": 6,
+          "access": true,
+          "state": true,
+          "id": 838872106,
+          "friendly_name": "Network Platform Integration Test Game",
+          "code": "ru.prepare_500",
+          "pgn": "prepare_500",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": [
+            838860104,
+            838860113
+            ]
+        },
+        {
+          "title_id": 79,
+          "access": true,
+          "state": true,
+          "id": 838872179,
+          "friendly_name": "Network Platform Integration Test Game",
+          "code": "ru.prepare_400",
+          "pgn": "prepare_400",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": [
+            838860104,
+            838860113
+          ]
+        },
+        {
+          "title_id": 7,
+          "access": true,
+          "state": true,
+          "id": 838872107,
+          "friendly_name": "Network Platform Integration Test Game",
+          "code": "ru.prepare_408",
+          "pgn": "prepare_408",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": [
+            838860104,
+            838860113
+          ]
+        },
+        {
+          "title_id": 8,
+          "access": true,
+          "state": true,
+          "id": 838872108,
+          "friendly_name": "Network Platform Integration Test Game",
+          "code": "ru.activated_500",
+          "pgn": "activated_500",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": [
+            838860104,
+            838860113
+          ]
+        },
+        {
+          "title_id": 9,
+          "access": true,
+          "state": true,
+          "id": 838872109,
+          "friendly_name": "Network Platform Integration Test Game",
+          "code": "ru.activated_400",
+          "pgn": "activated_400",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": [
+            838860104,
+            838860113
+          ]
+        },
+        {
+          "title_id": 10,
+          "access": true,
+          "state": true,
+          "id": 838872110,
+          "friendly_name": "Network Platform Integration Test Game",
+          "code": "ru.activated_408",
+          "pgn": "activated_408",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": [
+            838860104,
+            838860113
+          ]
+        },
+        {
+          "title_id": 11,
+          "access": true,
+          "state": true,
+          "id": 838872111,
+          "friendly_name": "Network Platform Integration Test Game",
+          "code": "ru.franz_400",
+          "pgn": "franz_400",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": [
+            838860104,
+            838860113
+          ]
+        },
+        {
+          "title_id": 12,
+          "access": true,
+          "state": true,
+          "id": 838872112,
+          "friendly_name": "Network Platform Integration Test Game",
+          "code": "ru.franz_200_fail",
+          "pgn": "franz_200_fail",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": [
+            838860104,
+            838860113
+          ]
+        },
+        {
+          "title_id": 14,
+          "access": true,
+          "state": true,
+          "id": 838872114,
+          "friendly_name": "Network Platform Integration Test Game",
+          "code": "ru.franz_empty",
+          "pgn": "franz_empty",
+          "pop": "ru",
+          "type": "game",
+          "region": "ru",
+          "public": false,
+          "shared_titles": [
+            838860104,
+            838860113
+          ]
+        },
+        {
+          "title_id": 12028,
+          "access": true,
+          "state": true,
+          "id": 838812028,
+          "friendly_name": "Title for failed publish test",
+          "code": "ru.failed",
+          "pgn": "failed",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": [
+            838860104,
+            838860113
+          ]
+        },
+        {
+          "title_id": 12029,
+          "access": true,
+          "state": true,
+          "id": 838812029,
+          "friendly_name": "Title for failed publish test",
+          "code": "no.catalog",
+          "pgn": "failed",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": [
+            838860104,
+            838860113
+          ]
+        },
+        {
+          "title_id": 13,
+          "access": false,
+          "state": true,
+          "id": 838860113,
+          "friendly_name": "Shared Currency",
+          "code": "ru.shared_currency",
+          "pgn": "shared_currency",
+          "pop": "ru",
+          "type": "shared",
+          "public": false,
+          "shared_titles": []
+        },
+        {
+          "title_id": 15,
+          "access": false,
+          "state": true,
+          "id": 838860115,
+          "friendly_name": "Publish validation title",
+          "code": "ru.publish_negative",
+          "pgn": "publish_negative",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": []
+        },
+        {
+          "title_id": 16,
+          "access": false,
+          "state": true,
+          "id": 838860116,
+          "friendly_name": "Publish order title",
+          "code": "ru.publish_order",
+          "pgn": "publish_order",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": []
+        },
+        {
+          "title_id": 17,
+          "access": false,
+          "state": true,
+          "id": 838860117,
+          "friendly_name": "Publish prepare big response title",
+          "code": "ru.prepare_big_response",
+          "pgn": "prepare_big_response",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": []
+        },
+        {
+          "title_id": 18,
+          "access": false,
+          "state": true,
+          "id": 838860118,
+          "friendly_name": "Prepare 301 title",
+          "code": "ru.prepare_301",
+          "pgn": "prepare_301",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": []
+        },
+        {
+          "title_id": 19,
+          "access": false,
+          "state": true,
+          "id": 838860119,
+          "friendly_name": "Prepare 504 title",
+          "code": "ru.prepare_504",
+          "pgn": "prepare_504",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": []
+        },
+        {
+          "title_id": 20,
+          "access": false,
+          "state": true,
+          "id": 838860120,
+          "friendly_name": "Prepare TIMEOUT title",
+          "code": "ru.prepare_TIMEOUT",
+          "pgn": "prepare_TIMEOUT",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": []
+        },
+        {
+          "title_id": 21,
+          "access": false,
+          "state": true,
+          "id": 838860121,
+          "friendly_name": "publish new catalog",
+          "code": "ru.publish_new_catalog",
+          "pgn": "publish_new_catalog",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": []
+        },
+        {
+          "title_id": 22,
+          "access": false,
+          "state": true,
+          "id": 838860122,
+          "friendly_name": "catalog_publications",
+          "code": "ru.catalog_publications",
+          "pgn": "catalog_publications",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": []
+        },
+        {
+          "title_id": 23,
+          "access": false,
+          "state": true,
+          "id": 838860123,
+          "friendly_name": "migration title",
+          "code": "ru.migration",
+          "pgn": "migration",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": []
+        },
+        {
+          "title_id": 24,
+          "access": true,
+          "state": true,
+          "id": 838860124,
+          "friendly_name": "inactive title",
+          "code": "ru.inactive",
+          "pgn": "inactive",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": []
+        },
+         {
+          "title_id": 25,
+          "access": false,
+          "state": true,
+          "id": 838860125,
+          "friendly_name": "inactive in db title",
+          "code": "ru.inactive_db",
+          "pgn": "inactive_db",
+          "pop": "ru",
+          "type": "game",
+          "public": false,
+          "shared_titles": []
+        }
+      ]
+    }
+  }
+}

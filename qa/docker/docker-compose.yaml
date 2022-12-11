@@ -1,0 +1,145 @@
+version: '3.3'
+volumes:
+  rmq-data:
+services:
+
+  cats:
+    image: ${CATS_IMAGE}
+    build:
+      dockerfile: ci/images/app/Dockerfile
+      context: ../..
+    environment:
+      APP: ${CATS_CONFIG}
+      SERVICE_REALM: 'itests'
+      SERVICE_HOST: 'cats-domain.net'
+      HOST: 'cats-domain.net'
+      SERVICE_APP: 'cats'
+      SERVICE_IMAGE: ${CATS_IMAGE}
+      APP_DB_DEFAULT_NAME: cats
+      APP_DB_DEFAULT_HOST: postgres
+      APP_DB_DEFAULT_USER: cats
+      APP_DB_DEFAULT_PASSWORD: cats
+      APP_DB_DEFAULT_PORT: 5432
+      LOGGING_FILE_THRESHOLD: 'OFF'
+      LOGGING_CONSOLE_THRESHOLD: 'ALL'
+      MARATHON_APP_RESOURCE_MEM: 1024
+      LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_WEB_REACTIVE_FUNCTION_CLIENT_EXCHANGEFUNCTIONS: 'INFO'
+    depends_on:
+      - postgres
+    ports:
+      - "8091:8091"
+    healthcheck:
+      test: ["CMD-SHELL", "nc -z localhost 8091"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  rabbitmq:
+    image: "artifactory.wgdp.io/wtp-docker/freya/rabbitmq:3.8.4-management-alpine"
+    hostname: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - ./rabbitmq/etc/rabbitmq/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf:ro
+      - ./rabbitmq/etc/rabbitmq/definitions.json:/etc/rabbitmq/definitions.json:ro
+      - ./rabbitmq/etc/rabbitmq/enabled_plugins:/etc/rabbitmq/enabled_plugins:ro
+      - rmq-data:/var/lib/rabbitmq:rw
+
+  postgres:
+    image: "artifactory.wgdp.io/wtp-docker/freya/postgres:13.4"
+    hostname: postgres
+    environment:
+      POSTGRES_DB: cats
+      POSTGRES_USER: cats
+      POSTGRES_PASSWORD: cats
+    ports:
+       - "5432:5432"
+    volumes:
+       - ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "nc -z localhost 5432"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  wiremock:
+    image: "artifactory.wgdp.io/wtp-docker/freya/wiremock:2.18.0"
+    hostname: wiremock
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./wiremock/mappings/:/opt/wiremock/mappings/:ro
+      - ./wiremock/__files/:/opt/wiremock/__files/:ro
+    healthcheck:
+      test: ["CMD-SHELL", "nc -z localhost 8080"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  wiremock_perf:
+    build:
+      dockerfile: qa/docker/wiremock_perf/ci/images/Dockerfile
+      context: ../..
+    container_name: wiremock_perf
+    hostname: wiremock
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./wiremock_perf/mappings/:/opt/wiremock/mappings/:ro
+      - ./wiremock_perf/__files/:/opt/wiremock/__files/:ro
+    healthcheck:
+      test: ["CMD-SHELL", "nc -z localhost 8080"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  zookeeper:
+    image: "artifactory.wgdp.io/wtp-docker/freya/cp-zookeeper:5.4.1"
+    hostname: zookeeper
+    container_name: zookeeper
+    ports:
+      - 2181:2181
+    environment:
+      ZOOKEEPER_SERVER_ID: 1
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    healthcheck:
+      test: echo ruok | nc localhost $$ZOOKEEPER_CLIENT_PORT
+      interval: 5s
+      timeout: 10s
+      retries: 5
+
+  clickhouse:
+    image: artifactory.wgdp.io/wtp-docker/shared/clickhouse-server-frankenstein:20.6.7.4
+    container_name: clickhouse
+    hostname: clickhouse
+    ports:
+      - '9000:9000/tcp'
+      - '8123:8123/tcp'
+    healthcheck:
+      test: [ "CMD-SHELL", "wget -qO- 'http://localhost:8123/?query=SELECT 1' | grep Ok" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: on-failure
+
+  snitch:
+    container_name: snitch
+    hostname: snitch
+    build:
+      context: ""
+      dockerfile: ./snitch/Dockerfile.snitch
+    environment:
+      RUST_LOG: 'info,snitch=debug'
+      CLICKHOUSE_URL: 'tcp://clickhouse:9000'
+    ports:
+      - '55555:55555/udp'
+    healthcheck:
+      test: [ "CMD-SHELL", "nc -vz -u 127.0.0.1 55555" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: on-failure
+    depends_on:
+      - clickhouse

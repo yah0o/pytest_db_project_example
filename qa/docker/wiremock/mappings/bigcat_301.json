@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/get_301.zip"
+  },
+  "response": {
+    "status": 301,
+    "headers": {
+      "Location": "/get_301.zip"
+    }
+  }
+}

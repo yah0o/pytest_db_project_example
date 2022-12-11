@@ -1,0 +1,1385 @@
+[
+  {
+    "storefront_id": "e8f7c7ce-5d1e-4b91-ae4c-a719c815b103",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_discount_duped_override_store",
+    "friendly_name": "duped override store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_discount_vc_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "cb66ca2b-f66b-4872-8240-9a0860b6902d",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_fixed_vc_discount_store",
+    "friendly_name": "fixed vc store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_discount_vc_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "f6ecba3b-5e91-4321-863f-8a4cdefe91ef",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "1x_override_store",
+    "friendly_name": "1x over store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_override_product"
+      },
+      {
+        "code": "test_override_product_2"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "0ec522a7-dcba-4080-88cf-69cddf38eed3",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_excess_fixed_vc_discount_store",
+    "friendly_name": "exc fixed vc store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_discount_vc_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "5ab5ea79-f4cc-436b-85af-cfaa1376220a",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_pct_pro_zone_vc_discount",
+    "friendly_name": "store with zone and vc discount",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_discount_vc_price"
+      },
+      {
+        "code": "test_product_discount_real_price"
+      },
+      {
+        "code": "test_product_discount_vc_and_real_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "dca149e0-ae52-4feb-a01f-126e9537003d",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_unlock",
+    "friendly_name": "Test Unlock Storefront",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_unlock"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "893f08ad-607e-40a8-93ac-ccdf68fdf568",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_many_discounts_store",
+    "friendly_name": "many discounts store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_discount_vc_and_real_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "0074196e-d72e-4688-9427-14550a3be0f9",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "promotion_ended_store",
+    "friendly_name": "ended promo store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 9,
+    "product_references": [
+      {
+        "code": "test_override_product"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "2c28015d-7fe5-43da-95f5-a85f18e1ee97",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_pct_pro_zone_discount",
+    "friendly_name": "store with zone discount",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_discount_vc_price"
+      },
+      {
+        "code": "test_product_discount_real_price"
+      },
+      {
+        "code": "test_product_discount_vc_and_real_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "a79dc8d2-006a-432f-a24f-2e70c800cb58",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_discount_pct_pro_vc_store",
+    "friendly_name": "pct pro vc store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_discount_vc_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "1240dd01-cf58-4ef5-940c-ba806153d415",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "3x_override_store",
+    "friendly_name": "3x over store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_override_product"
+      },
+      {
+        "code": "test_override_product_2"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "b7b9fa16-c8ed-4215-9bda-0045bfa34b20",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_discount_pct_add_real_store",
+    "friendly_name": "pct add real store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_discount_real_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "94b42278-a7a6-4e20-b409-9f34eec4dba9",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "overridden_country_promo_store",
+    "friendly_name": "store country promo",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_override_product_2"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "6647bb44-0e29-4518-8f72-ef607ffb6eb5",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_discount_excess_fixed_real_store",
+    "friendly_name": "fx exc real store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_discount_real_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "759152e3-2abd-44a4-8d4a-b4b46efd02fe",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_xtr_references",
+    "friendly_name": "Contains references to external products",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "xtr_product_generic",
+        "title_code": "np.tartest"
+      },
+      {
+        "code": "xtr_product_needs_prereq",
+        "title_code": "np.tartest"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "ce4c0af8-e704-447b-acd3-2c641b97c6e3",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store",
+    "friendly_name": "Test Storefront",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 24,
+    "product_references": [
+      {
+        "code": "test_product_gold"
+      },
+      {
+        "code": "test_product_multi"
+      },
+      {
+        "code": "test_product_money"
+      },
+      {
+        "code": "test_vc_product_receipt"
+      },
+      {
+        "code": "test_product_variable"
+      },
+      {
+        "code": "test_rm_product_premium"
+      },
+      {
+        "code": "test_vc_product_entitlement"
+      },
+      {
+        "code": "test_rm_product_spa_access"
+      },
+      {
+        "code": "test_rm_product_entitlement"
+      },
+      {
+        "code": "test_rm_product_currency"
+      },
+      {
+        "code": "test_vc_product_currency"
+      },
+      {
+        "code": "test_vc_product_full"
+      },
+      {
+        "code": "test_product_free"
+      },
+      {
+        "code": "test_rm_product_bonus_code"
+      },
+      {
+        "code": "test_vc_product_bonus_code"
+      },
+      {
+        "code": "product_with_expired_promo"
+      },
+      {
+        "code": "product_with_promo_not_started"
+      },
+      {
+        "code": "product_with_entitlement_does_not_exist"
+      },
+      {
+        "code": "product_with_currency_does_not_exist"
+      },
+      {
+        "code": "product_vc_with_expired_promo"
+      },
+      {
+        "code": "product_vc_with_promo_not_started"
+      },
+      {
+        "code": "product_with_promo_and_two_overrides"
+      },
+      {
+        "code": "product_vc_with_promo_and_two_overrides"
+      },
+      {
+        "code": "product_with_one_discount"
+      },
+      {
+        "code": "product_vc_with_one_discount"
+      },
+      {
+        "code": "test_product_with_localization"
+      },
+      {
+        "code": "any_amount_gold"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "7aba77bc-4689-4fcd-a642-a66522aad15d",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "prereq_store",
+    "friendly_name": "Prerequisite Storefront",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 10,
+    "product_references": [
+      {
+        "code": "test_product_unlock"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "b74fdeb9-8a04-4851-9090-37ffefa31182",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_country_restrictions",
+    "friendly_name": "Store with product country restrictions",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_country_restricted"
+      },
+      {
+        "code": "test_product_with_base_price"
+      },
+      {
+        "code": "test_product_country_price_override"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "2379bb0b-d2e0-42e3-8f18-610a40cccef0",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "promotion_empty_store",
+    "friendly_name": "empty store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "a743c6c8-5f39-4911-9153-ef9479402ad6",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "promotion_overridden_empty_store",
+    "friendly_name": "empty ovrd store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "f7e170c5-0f9b-434b-869d-e65b6ef65f60",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_premium",
+    "friendly_name": "Test Premium Storefront",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 10,
+    "product_references": [
+      {
+        "code": "barbarian_bundle"
+      },
+      {
+        "code": "test_product_money"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "bfbcfde8-d90d-43f1-8615-4d519e9df6d2",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_with_prerequisites",
+    "friendly_name": "Storefront for prereq testing",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 1,
+    "product_references": [
+      {
+        "code": "product_with_less_than_prereq"
+      },
+      {
+        "code": "product_with_equals_prereq"
+      },
+      {
+        "code": "product_with_greater_than_prereq"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "2c81442a-0564-4a88-b783-672fbe7e26cb",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_full",
+    "friendly_name": "Test Storefront",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_variable"
+      },
+      {
+        "code": "test_product_real_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "3b38ea9c-527d-4f12-b2d4-0a6224977479",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_discount_pct_pro_real_store",
+    "friendly_name": "pct pro real store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_discount_real_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "44ec46ac-b891-4ec8-8305-9e30812737d9",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_override",
+    "friendly_name": "Test Storefront",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 29,
+    "product_references": [
+      {
+        "code": "test_product_gold"
+      },
+      {
+        "code": "test_product_multi"
+      },
+      {
+        "code": "test_product_money"
+      },
+      {
+        "code": "test_vc_product_receipt"
+      },
+      {
+        "code": "test_product_variable"
+      },
+      {
+        "code": "test_rm_product_premium"
+      },
+      {
+        "code": "test_vc_product_entitlement"
+      },
+      {
+        "code": "test_rm_product_spa_access"
+      },
+      {
+        "code": "test_rm_product_entitlement"
+      },
+      {
+        "code": "test_rm_product_currency"
+      },
+      {
+        "code": "test_vc_product_currency"
+      },
+      {
+        "code": "test_vc_product_full"
+      },
+      {
+        "code": "test_product_free"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "6b9b95b9-d9ce-476c-a4b9-749cd9184b5e",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_with_discount",
+    "friendly_name": "store with discount",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 1,
+    "product_references": [
+      {
+        "code": "test_product_with_discount"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "f831195f-ac3a-4e74-a14f-d1e811f5507b",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_discount_multiple_promos_store",
+    "friendly_name": "store w 2 promos",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_discount_vc_and_real_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "9f2ccf9a-b8ca-4f05-bdf0-003324640b2b",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_discount_pct_add_vc_store",
+    "friendly_name": "pct add vc store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_discount_vc_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "e4b8f2ab-1bd1-470d-a47f-796f68bc18d9",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_basic",
+    "friendly_name": "store with basic products",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_entitlement"
+      },
+      {
+        "code": "test_product_gold"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "4fd78bdf-5bfb-4671-9290-d5df2e25436e",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_blank_fields_override_store",
+    "friendly_name": "prod has true bools",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_true_bools_override_product"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "98ce6166-bd59-43ca-b3aa-ebd32cbad753",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "concurrent_promos_storefront",
+    "friendly_name": "concurrent store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_override_product"
+      },
+      {
+        "code": "test_override_product_2"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "1c898bc6-f93a-46ce-b48c-71b6819bcd90",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_discount_abs_real_store",
+    "friendly_name": "abs real store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_discount_real_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "b6441c9e-0673-4925-9c2a-64e8126f223c",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_discount_fixed_real_store",
+    "friendly_name": "fx real store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_discount_real_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "c6ba2f2c-44f1-40b1-90cd-46b0f6d312e5",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_abs_vc_discount_store",
+    "friendly_name": "abs vc store",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_discount_vc_price"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "2d625d6b-ac55-4397-be01-cd72ae2c6132",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "promotion_empty_store_2",
+    "friendly_name": "empty store 2",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "a8184147-85d5-4699-be01-f01094103348",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_storefront_xp",
+    "friendly_name": "LQO Dev Storefront with xp product",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 1,
+    "product_references": [
+      {
+        "code": "test_product_xp"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "78443d8e-0ea9-4c1e-9441-f80b78ce331e",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_storefront_overlap",
+    "friendly_name": "LQO Dev Storefront with overlap promotions",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 1,
+    "product_references": [
+      {
+        "code": "test_product_default"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "d68a046d-0e45-443e-b7e4-4ae191062c20",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_frontline",
+    "friendly_name": "Test FrontLine Storefront",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_frontline_tank_rent"
+      },
+      {
+        "code": "test_product_frontline_tank_buy"
+      },
+      {
+        "code": "test_product_frontline_tank_buy_no_prereq"
+      },
+      {
+        "code": "test_product_frontline_tank_buy_with_promo"
+      },
+      {
+        "code": "test_product_frontline_tank_buy_with_lqo"
+      },
+      {
+        "code": "test_product_frontline_compensation"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "e620304d-ce8c-48f6-b5f2-4f1b249c16d2",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_invisible",
+    "friendly_name": "Test Storefront Invisible",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_invisible"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "f23fcaf6-4cbb-4b58-89da-65747f9a7eee",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_invisible_no_product_reference",
+    "friendly_name": "Test Storefront Invisible via storefront",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "78ffb857-c516-409b-89fe-98247fb74721",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_with_categories",
+    "friendly_name": "Test Storefront With Categories",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "categories": {
+      "test_category_a": {
+        "activate_at": "1520174000",
+        "deactivate_at": "1893456000"
+      },
+      "test_category_b": {
+        "activate_at": "1520174000",
+        "deactivate_at": "1893456000"
+      },
+      "test_category_aa": {
+        "activate_at": "1520174000",
+        "deactivate_at": "1893456000",
+        "parent": "test_category_a"
+      }
+    },
+    "product_references": [
+      {
+        "code": "test_product_with_category_a"
+      },
+      {
+        "code": "test_product_with_category_b"
+      },
+      {
+        "code": "test_product_with_category_a_and_b"
+      },
+      {
+        "code": "test_product_with_category_aa"
+      },
+      {
+        "code": "test_product_with_category_aa_and_a"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "6cf22c4b-7462-4b55-a313-85d521a12bfe",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_with_categories_and_promo",
+    "friendly_name": "Test Storefront With Categories And Promo",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "categories": {
+      "test_category_a": {
+        "activate_at": "1520174000",
+        "deactivate_at": "1520175000"
+      },
+      "test_category_b": {
+        "activate_at": "1520174000",
+        "deactivate_at": "1520175000"
+      }
+    },
+    "product_references": [
+      {
+        "code": "test_product_with_categories_changed_by_promo"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "d68a046d-0e45-443e-b7e4-4ae191062c21",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_categories",
+    "friendly_name": "Test Categories Storefront",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "product_with_categories"
+      },
+      {
+        "code": "product_without_categories"
+      }
+    ],
+    "categories": {
+      "category_equipment_root": {
+        "metadata": {
+          "wgpm": {
+            "old_metadata": {
+              "@type": "Jsonb",
+              "general": {}
+            }
+          }
+        },
+        "activate_at": 500,
+        "deactivate_at": 4676462000
+      },
+      "category_equipment_additional": {
+        "metadata": {
+          "wgpm": {
+            "old_metadata": {
+              "@type": "Jsonb",
+              "general": {}
+            }
+          }
+        },
+        "activate_at": 500,
+        "deactivate_at": 4676462000,
+        "parent": "category_equipment_root"
+      },
+      "category_tanks_root": {
+        "metadata": {
+          "wgpm": {
+            "old_metadata": {
+              "@type": "Jsonb",
+              "general": {}
+            }
+          }
+        }
+      },
+      "category_tanks_heavy": {
+        "metadata": {
+          "wgpm": {
+            "old_metadata": {
+              "@type": "Jsonb",
+              "general": {}
+            }
+          }
+        },
+        "activate_at": 400,
+        "deactivate_at": 1553073093,
+        "parent": "category_tanks_root"
+      },
+      "category_tanks_medium": {
+        "metadata": {
+          "wgpm": {
+            "old_metadata": {
+              "@type": "Jsonb",
+              "general": {}
+            }
+          }
+        },
+        "activate_at": 1553073093,
+        "deactivate_at": 4676462000,
+        "parent": "category_tanks_root"
+      },
+      "category_frontline_root": {
+        "metadata": {
+          "wgpm": {
+            "old_metadata": {
+              "@type": "Jsonb",
+              "general": {}
+            }
+          }
+        },
+        "activate_at": 400,
+        "deactivate_at": 4676462000
+      },
+      "category_not_started": {
+        "metadata": {
+          "wgpm": {
+            "old_metadata": {
+              "@type": "Jsonb",
+              "general": {}
+            }
+          }
+        },
+        "activate_at": 1893456000,
+        "deactivate_at": 2208988800
+      },
+      "category_finished": {
+        "metadata": {
+          "wgpm": {
+            "old_metadata": {
+              "@type": "Jsonb",
+              "general": {}
+            }
+          }
+        },
+        "activate_at": 500,
+        "deactivate_at": 1262304000
+      },
+      "category_with_expired_parent": {
+        "metadata": {
+          "wgpm": {
+            "old_metadata": {
+              "@type": "Jsonb",
+              "general": {}
+            }
+          }
+        },
+        "activate_at": 400,
+        "deactivate_at": 1893456000,
+        "parent": "category_finished"
+      },
+      "category_no_start": {
+        "metadata": {
+          "wgpm": {
+            "old_metadata": {
+              "@type": "Jsonb",
+              "general": {}
+            }
+          }
+        },
+        "deactivate_at": 1893456000
+      },
+      "category_no_finish": {
+        "metadata": {
+          "wgpm": {
+            "old_metadata": {
+              "@type": "Jsonb",
+              "general": {}
+            }
+          }
+        },
+        "activate_at": 400
+      }
+    },
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "d68a046d-0e45-443e-b7e4-4ae191062c22",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_without_categories",
+    "friendly_name": "Test Storefront Without Categories",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "product_with_categories"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "d68a046d-0e45-443e-b8e4-4ae191062c22",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_with_override",
+    "friendly_name": "Test Storefront With Override",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "product_with_categories"
+      },
+      {
+        "code": "product_without_categories"
+      },
+      {
+        "code": "product_rm_with_categories"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "d68a046d-0e45-443e-b8e4-4ae111062c22",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_with_override_no_category",
+    "friendly_name": "Test Storefront With Override and no Categories",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "product_with_categories"
+      },
+      {
+        "code": "product_without_categories"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "d68a046d-0e45-443e-b8e4-4ae005562c22",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_with_override_empty_category",
+    "friendly_name": "Test Storefront With Override and empty categories",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "product_with_categories"
+      },
+      {
+        "code": "product_without_categories"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "d68a046d-0e45-443e-b8e4-4ae007652c22",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_with_two_categories",
+    "friendly_name": "Test Storefront With One Category",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "categories": {
+      "test_category_expired": {
+        "activate_at": "1520174000",
+        "deactivate_at": "1520175000",
+        "order": 1,
+        "metadata": {}
+      },
+      "test_category_active": {
+        "activate_at": "1520174000",
+        "deactivate_at": "1923264000",
+        "order": 2,
+        "parent": "test_category_expired"
+      }
+    },
+    "product_references": [],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "d68a046d-0e45-443e-b8e4-4ae654652c22",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_with_category_and_meta_localization",
+    "friendly_name": "Test Storefront With Categories",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "categories": {
+      "test_category_with_meta": {
+        "activate_at": "1520174000",
+        "deactivate_at": "1520175000",
+        "order": 3,
+        "metadata": {
+          "name": {
+            "@type": "LocString",
+            "data": {
+              "en": "Test_en",
+              "de": "Test_de",
+              "fr": "Test_fr",
+              "ru": "Test_ru"
+            }
+          },
+          "description": {
+            "@type": "LocString",
+            "data": {
+              "en": "Test_en",
+              "de": "Test_de",
+              "fr": "Test_fr",
+              "ru": "Test_ru"
+            }
+          }
+        }
+      }
+    },
+    "product_references": [],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "a93eb919-094d-4886-8857-d4741b2718f7",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_with_categories_no_products",
+    "friendly_name": "Test Storefront No Product and Override Categories",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "d68a048d-0e45-443e-b8e4-4ae005562c22",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_advent_calendar",
+    "friendly_name": "Test Storefront For Advent Calendar",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_vc_test_slot"
+      },
+      {
+        "code": "test_product_vc_ent_price"
+      },
+      {
+        "code": "test_product_vc_ent_price_system_false"
+      },
+      {
+        "code": "test_product_vc_ent_price_system_default"
+      },
+      {
+        "code": "test_product_vc_and_ent_price"
+      },
+      {
+        "code": "test_product_vc_and_ent_price_system_false"
+      },
+      {
+        "code": "test_product_vc_and_ent_price_system_default"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "7a05e6b4-2789-4539-a687-ff11130026ad",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_prerequisites_wgid0",
+    "friendly_name": "Test Storefront for prerequisites with wgid 0",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_vc_prereq_wgid0_eq0"
+      },
+      {
+        "code": "test_product_vc_prereq_wgid0_eq1"
+      },
+      {
+        "code": "test_product_vc_prereq_wgid0_gt0"
+      },
+      {
+        "code": "test_product_vc_prereq_wgid0_lt1"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "127e16dc-86c4-40a7-98ef-0468d81fc670",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_product_vc_with_entitlement_meta_receipt",
+    "friendly_name": "TEST PRODUCT WITH ENTITLEMENT META RECEIPT",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "product_references": [
+      {
+        "code": "test_product_vc_with_entitlement_meta_receipt_str"
+      },
+      {
+        "code": "test_product_vc_with_entitlement_meta_receipt_json"
+      }
+    ],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  },
+  {
+    "storefront_id": "aef3a2d6-f5c4-11eb-a8e8-8c85902646ff",
+    "metadata": {},
+    "title_code": "ru.nptst",
+    "code": "test_store_epic_wows_localized",
+    "friendly_name": "Test Storefront localized categories",
+    "catalog": "ru.nptst-MINSK-433",
+    "version": 2,
+    "categories": {
+      "customizations": {
+        "metadata": {
+          "description": {
+            "@type": "LocString",
+            "data": {
+              "en": "<p>Variety is our strong point!</p>",
+              "ru": "<p>\u0420\u0430\u0437\u043d\u043e\u043e\u0431\u0440\u0430\u0437\u0438\u0435 \u0430\u0441\u0441\u043e\u0440\u0442\u0438\u043c\u0435\u043d\u0442\u0430 \u0438 \u043a\u0440\u0430\u0441\u0438\u0432\u044b\u0435 \u0430\u0431\u0441\u0442\u0440\u0430\u043a\u0446\u0438\u0438 \u044d\u0442\u043e \u043d\u0430\u0448 \u043a\u043e\u043d\u0435\u043a!</p>",
+              "value": "<p>Variety is our strong point!</p>"
+            }
+          },
+          "title": {
+            "@type": "LocString",
+            "data": {
+              "en": "Customizations",
+              "ru": "\u0420\u0430\u0437\u043d\u043e\u0435",
+              "value": "Customizations"
+            }
+          }
+        },
+        "order": 0,
+        "parent": null
+      },
+      "doubloons": {
+        "metadata": {
+          "description": {
+            "@type": "LocString",
+            "data": {
+              "en": "<p>You can buy almost everything for gold in <a href=\"https://armory.worldofwarships.ru/\">Armory</a></p>",
+              "ru": "<p>\u0417\u0430 \u0434\u0443\u0431\u043b\u043e\u043d\u044b \u043c\u043e\u0436\u043d\u043e \u043a\u0443\u043f\u0438\u0442\u044c \u043f\u043e\u0447\u0442\u0438 \u043b\u044e\u0431\u043e\u0435 \u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u043e, \u043d\u0430\u043f\u0440\u0438\u043c\u0435\u0440 \u0432 <a href=\"http://armory.worldofwarships.ru/\">Armory</a></p>",
+              "value": "<p>You can buy almost everything for gold in <a href=\"https://armory.worldofwarships.ru/\">Armory</a></p>"
+            }
+          },
+          "title": {
+            "@type": "LocString",
+            "data": {
+              "en": "Doubloons and premium",
+              "ru": "\u0414\u0443\u0431\u043b\u043e\u043d\u044b \u0438 \u043f\u0440\u0435\u043c",
+              "value": "Doubloons and premium"
+            }
+          }
+        },
+        "order": 0,
+        "parent": null
+      },
+      "featured": {
+        "metadata": {
+          "category_type": {
+            "@type": "string",
+            "data": "featuring"
+          },
+          "title": {
+            "@type": "LocString",
+            "data": {
+              "en": "Featured",
+              "ru": "\u0420\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0443\u0435\u043c\u043e\u0435",
+              "value": "Featured"
+            }
+          }
+        },
+        "order": 0,
+        "parent": null
+      }
+    },
+    "product_references": [],
+    "tags_query": [],
+    "metadata_query": [],
+    "metadata_namespace_filter": []
+  }
+]

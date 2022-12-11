@@ -1,0 +1,192 @@
+{
+  "id": "commerce.fetch-filter-properties.v1",
+  "description": "Return lists of filter properties",
+  "documentation": "https://jira.wargaming.net/browse/FREYA-1001",
+  "trigger": {
+    "type": "request.commerce.fetch-filter-properties.v1",
+    "description": "",
+    "payload_schema": {
+      "type": "object",
+      "description": "",
+      "properties": {
+        "title_code": {
+          "type": "string",
+          "description": "Code of a title to which filter properties belongs",
+          "tag": "common.title-code.v1",
+          "minLength": 1,
+          "maxLength": 50
+        },
+        "language": {
+          "type": "string",
+          "description": "Language",
+          "tag": "commerce.language-code.v1",
+          "minLength": 2,
+          "maxLength": 9
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "title_code"
+      ]
+    }
+  },
+  "reaction": {
+    "type": "response.commerce.fetch-filter-properties.v1",
+    "description": "",
+    "payload_schema": {
+      "type": "object",
+      "description": "",
+      "properties": {
+        "filter_properties": {
+          "type": "array",
+          "description": "List of filter properties",
+          "items": {
+            "type": "object",
+            "description": "",
+            "additionalProperties": false,
+            "tag": "commerce.filter-properties.v1",
+            "properties": {
+              "code": {
+                "type": "string",
+                "description": "Filter properties code",
+                "tag": "commerce.filter-properties-code.v1",
+                "minLength": 1
+              },
+              "type": {
+                "type": "string",
+                "description": "Value type",
+                "tag": "commerce.filter-properties-type.v1",
+                "enum": [
+                  "integer",
+                  "float",
+                  "string",
+                  "enum"
+                ]
+              },
+              "metadata": {
+                "type": "object",
+                "description": "Filter properties metadata",
+                "additionalProperties": false,
+                "tag": "common.map.v1",
+                "patternProperties": {
+                  "^[a-zA-Z_0-9-]{1,32}$": {}
+                }
+              }
+            },
+            "required": [
+              "code",
+              "type"
+            ]
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "filter_properties"
+      ]
+    }
+  },
+  "errors": [
+    {
+      "code": "common.v1.internal-server-error",
+      "description": "This error appears when capi server catches an unhandled error",
+      "documentation": "https://confluence.wargaming.net/x/Hw8PHg",
+      "severity": "CRITICAL",
+      "context_schema": {
+        "description": "A generic network platform error",
+        "type": "object",
+        "properties": {
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "code": "common.v1.client-error",
+      "description": "A generic error which usually appears due to the client incorrect request",
+      "documentation": "https://confluence.wargaming.net/x/Hw8PHg",
+      "severity": "MAJOR",
+      "context_schema": {
+        "description": "A generic network platform error",
+        "type": "object",
+        "properties": {
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "code": "common.v1.validation-error",
+      "description": "This error appears when request parameters dont pass a validation check",
+      "documentation": "https://confluence.wargaming.net/x/Hw8PHg",
+      "severity": "MAJOR",
+      "context_schema": {
+        "description": "Generic validation error object. Where KEY is usually name of invalid parameter and VALUE is the reason",
+        "type": "object",
+        "properties": {
+          "problems": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "field": {
+                  "description": "Name of a field which didn't pass the validation",
+                  "type": "string"
+                },
+                "reason": {
+                  "description": "Why a field didn't pass the validation",
+                  "type": "string"
+                },
+                "value": {
+                  "description": "An actual value of filed, which didn't pass the validation"
+                }
+              }
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "code": "commerce.catalog-error.v1",
+      "description": "Catalog Configuration Error",
+      "documentation": "",
+      "severity": "MAJOR",
+      "context_schema": {
+        "type": "object",
+        "description": "",
+        "properties": {
+          "result_code": {
+            "type": "string",
+            "description": "Describes result of operation in short form,",
+            "tag": "common.string.v1"
+          },
+          "reason": {
+            "type": "string",
+            "description": "Extended result description,",
+            "tag": "common.string.v1"
+          },
+          "context": {
+            "type": "string",
+            "description": "Additional info like full error message or stacktrace,",
+            "tag": "common.string.v1"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "result_code"
+        ]
+      }
+    }
+  ]
+}

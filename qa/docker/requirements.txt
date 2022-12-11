@@ -1,0 +1,6 @@
+--trusted-host pypi.org
+
+psycopg2-binary==2.9.1
+invoke==1.2.0
+tenacity==5.0.2
+pyyaml==5.3.1

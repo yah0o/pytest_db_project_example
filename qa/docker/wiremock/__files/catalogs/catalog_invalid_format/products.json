@@ -1,0 +1,370 @@
+{
+    "product1": {
+        "id": "e167ee70-4a78-452e-9b18-b0ac483b26ae",
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "type": "PLACEHOLDER",
+        "tags": ["test"],
+        "code": "test_product_with_discount",
+        "friendly_name": "prod w discount",
+        "currencies": [],
+        "entitlements": [
+            {
+                "code": "test_entitlement_default",
+                "amount": 1,
+                "percent_value": [
+                    {
+                        "pct": 100,
+                        "code": "gold"
+                    }
+                ],
+                "expiration_type": "NONE",
+                "expiration_seconds": "0",
+                "compensation": {
+                    "type": "NONE",
+                    "amount": 0
+                },
+                "metadata": {}
+            }
+        ],
+        "prices": {
+            "virtual_currency_price": [],
+            "base_real_money_prices": {
+                "default": {
+                    "code": "USD",
+                    "amount": "100.00",
+                    "expiration_seconds": "0"
+                }
+            },
+            "real_money_overrides": {},
+            "variable_price": {}
+        },
+        "prerequisites": [],
+        "giftable": false,
+        "actions": [],
+        "bonus_sets": [],
+        "spa_access": [],
+        "restricted": [],
+        "payment_group": [],
+        "notification_single_purchase": {},
+        "metadata": {},
+        "fulfillment_type": "COMPENSATION",
+        "merge_quantity": true,
+        "rewards": [],
+        "visible": true,
+        "purchasable": true
+    },
+    "product2": {
+        "id": "bbcf986d-24eb-4a30-977d-85b66ba2a338",
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "type": "PLACEHOLDER",
+        "code": "barbarian_bundle",
+        "friendly_name": "Barbarian Bundle",
+        "currencies": [
+            {
+                "code": "gold",
+                "title_code": "ru.nptst",
+                "amount": "3500",
+                "percent_value": [
+                    {
+                        "pct": 40,
+                        "code": "USD"
+                    }
+                ],
+                "expiration_type": "NONE",
+                "expiration_seconds": "0"
+            }
+        ],
+        "entitlements": [
+            {
+                "code": "access_entitlement",
+                "title_code": "ru.nptst",
+                "amount": 1,
+                "percent_value": [
+                    {
+                        "pct": 0,
+                        "code": "USD"
+                    }
+                ],
+                "expiration_type": "NONE",
+                "expiration_seconds": "0",
+                "compensation": {
+                    "type": "NONE",
+                    "amount": 0
+                },
+                "metadata": {}
+            },
+            {
+                "code": "premium_time_30_days",
+                "title_code": "ru.nptst",
+                "amount": 1,
+                "percent_value": [
+                    {
+                        "pct": 30,
+                        "code": "USD"
+                    }
+                ],
+                "expiration_type": "NONE",
+                "expiration_seconds": "0",
+                "compensation": {
+                    "type": "NONE",
+                    "amount": 0
+                },
+                "metadata": {}
+            },
+            {
+                "code": "barbarian_bundle_owner",
+                "title_code": "ru.nptst",
+                "amount": 1,
+                "percent_value": [
+                    {
+                        "pct": 15,
+                        "code": "USD"
+                    }
+                ],
+                "expiration_type": "NONE",
+                "expiration_seconds": "0",
+                "compensation": {
+                    "type": "NONE",
+                    "amount": 0
+                },
+                "metadata": {}
+            }
+        ],
+        "prices": {
+            "virtual_currency_price": [],
+            "base_real_money_prices": {
+                "default": {
+                    "code": "USD",
+                    "amount": "39.99",
+                    "expiration_seconds": "0"
+                }
+            },
+            "real_money_overrides": {},
+            "variable_price": {}
+        },
+        "prerequisites": [
+            {
+                "code": "access_entitlement",
+                "op": "LESS_THAN",
+                "value": 1,
+                "is_global": true
+            }
+        ],
+        "tags": [
+            "battlePassAllowed",
+            "premium_equipment"
+        ],
+        "giftable": false,
+        "actions": [],
+        "bonus_sets": [],
+        "spa_access": [
+            {
+                "game_code": "nptest",
+                "pct_value": [
+                    {
+                        "pct": 15,
+                        "code": "USD"
+                    }
+                ]
+            }
+        ],
+        "restricted": [
+            "kr"
+        ],
+        "payment_group": [
+            "standardGroup1"
+        ],
+        "notification_single_purchase": {},
+        "metadata": {
+            "pss": {
+                "benefits": {
+                    "@type": "LocMediaList",
+                    "data": [
+                        {
+                            "mediatype": "image",
+                            "url": {
+                                "value": "https://static-pss-na.wgcdn.co/shop/media/benefits/a1/65/a16507c6001a4ef4bb19656977efd15e.png"
+                            },
+                            "text": {
+                                "en": "Play!",
+                                "ru": "Play!"
+                            },
+                            "tags": {
+                                "is_general": true
+                            }
+                        },
+                        {
+                            "mediatype": "image",
+                            "url": {
+                                "value": "https://static-pss-na.wgcdn.co/shop/media/benefits/5d/f1/5df16708aaa24297b45b83a8aaf5035c.png"
+                            },
+                            "text": {
+                                "en": "Premium Time",
+                                "ru": "Premium Time"
+                            },
+                            "tags": {
+                                "is_general": true
+                            }
+                        }
+                    ]
+                },
+                "show_timer": {
+                    "@type": "Boolean",
+                    "data": false
+                },
+                "old_metadata": {
+                    "@type": "Jsonb",
+                    "end_status": "",
+                    "start_status": "",
+                    "search_properties": {}
+                },
+                "description": {
+                    "@type": "LocString",
+                    "data": {
+                        "en": "Beware the Barbarians",
+                        "ru": "Остерегайтесь варваров"
+                    }
+                },
+                "offer_labels": {
+                    "@type": "LocStringList",
+                    "data": []
+                },
+                "package_content": {
+                    "@type": "LocString",
+                    "data": {
+                        "en": "<ul>\r\n<li>CBT access</li>\r\n<li>Gold</li>\r\n</ul>",
+                        "ru": "<ul>\r\n<li>Доступ к CBT</li>\r\n</ul>"
+                    }
+                },
+                "background_image": {
+                    "@type": "LocMedia",
+                    "data": {
+                        "mediatype": "image",
+                        "url": {
+                            "value": "https://ru.wgnwn.wgns.iv/shop/media/backgrounds/WoWP_Gold_Prem_Consumables_9Qr4bH5.jpg"
+                        }
+                    }
+                },
+                "additional_information": {
+                    "@type": "LocString",
+                    "data": {
+                        "en": "Additional information here",
+                        "ru": "Дополнительная информация здесь"
+                    }
+                },
+                "promo_image": {
+                    "@type": "LocMedia",
+                    "data": {
+                        "mediatype": "image",
+                        "url": {
+                            "value": "https://static-pss-na.wgcdn.co/shop/media/benefits/1e/4a/1e4ad47ce4dd4afab17e3ae4360527de.png"
+                        }
+                    }
+                },
+                "grid_2x1_image": {
+                    "@type": "LocMedia",
+                    "data": {
+                        "mediatype": "image",
+                        "url": {
+                            "value": "https://psui.ru.wots.iv/media/items/25/e3/25e3ada30a224957ad73c5c32385c7ff_2x1.png"
+                        }
+                    }
+                },
+                "gallery_videos": {
+                    "@type": "LocMediaList",
+                    "data": [
+                        {
+                            "mediatype": "video",
+                            "url": {
+                                "value": "https://youtu.be/gZ3V8_XEf2I"
+                            }
+                        }
+                    ]
+                },
+                "name": {
+                    "@type": "LocString",
+                    "data": {
+                        "en": "Barbarian Bundle",
+                        "ru": "Коллекция варваров"
+                    }
+                },
+                "original_image": {
+                    "@type": "LocMedia",
+                    "data": {
+                        "mediatype": "image",
+                        "url": {
+                            "value": "https://ru.wgnwn.wgns.iv/shop/media/items/0b/42/0b42624994a047d3a949b2fc72f75956.png"
+                        }
+                    }
+                },
+                "size_in_grid": {
+                    "@type": "String",
+                    "data": "1x1"
+                },
+                "grid_1x1_image": {
+                    "@type": "LocMedia",
+                    "data": {
+                        "mediatype": "image",
+                        "url": {
+                            "value": "https://psui.ru.wots.iv/media/items/25/e3/25e3ada30a224957ad73c5c32385c7ff_1x1.png"
+                        }
+                    }
+                },
+                "categories": {
+                    "@type": "LocStringList",
+                    "data": [
+                        {
+                            "en": "Founder Packs",
+                            "value": "founderpacks"
+                        }
+                    ]
+                },
+                "title_slug": {
+                    "@type": "String",
+                    "data": "twa"
+                },
+                "gallery_images": {
+                    "@type": "LocMediaList",
+                    "data": [
+                        {
+                            "mediatype": "image",
+                            "url": {
+                                "en": "https://psui.ru.wots.iv/media/items/item_gallery/10/14/10147b10ab3941688f16448a3c07ef77.png",
+                                "ru": "https://psui.ru.wots.iv/media/items/item_gallery/10/14/10147b10ab3941688f16448a3c07ef77.png"
+                            },
+                            "preview_url": {
+                                "en": "https://psui.ru.wots.iv/media/items/item_gallery/10/14/10147b10ab3941688f16448a3c07ef77.png",
+                                "ru": "https://psui.ru.wots.iv/media/items/item_gallery/10/14/10147b10ab3941688f16448a3c07ef77.png"
+                            }
+                        },
+                        {
+                            "mediatype": "image",
+                            "url": {
+                                "en": "https://psui.ru.wots.iv/media/items/item_gallery/fa/78/fa788217e36f440c81e33e4bb8c0ab33.png",
+                                "ru": "https://psui.ru.wots.iv/media/items/item_gallery/fa/78/fa788217e36f440c81e33e4bb8c0ab33.png"
+                            },
+                            "preview_url": {
+                                "en": "https://psui.ru.wots.iv/media/items/item_gallery/fa/78/fa788217e36f440c81e33e4bb8c0ab33.png",
+                                "ru": "https://psui.ru.wots.iv/media/items/item_gallery/fa/78/fa788217e36f440c81e33e4bb8c0ab33.png"
+                            }
+                        }
+                    ]
+                }
+            },
+            "wgpm": {
+                "old_metadata": {
+                    "@type": "Jsonb",
+                    "general": {}
+                }
+            }
+        },
+        "fulfillment_type": "COMPENSATION",
+        "merge_quantity": true,
+        "rewards": [],
+        "visible": true,
+        "purchasable": true
+    }
+}
+

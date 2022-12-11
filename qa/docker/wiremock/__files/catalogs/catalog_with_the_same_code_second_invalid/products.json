@@ -1,0 +1,56 @@
+[
+    {
+        "id": "96c23858-3af7-11ec-8d3d-0242ac130003",
+        "title_code": "ru.nptst",
+        "type": "PLACEHOLDER",
+        "tags": ["test"],
+        "code": "test_product_with_discount_the_same_catalog_2",
+        "friendly_name": "prod w discount",
+        "currencies": [],
+        "entitlements": [
+            {
+                "code": "test_entitlement_default",
+                "amount": 1,
+                "percent_value": [
+                    {
+                        "pct": 100,
+                        "code": "gold"
+                    }
+                ],
+                "expiration_type": "NONE",
+                "expiration_seconds": "0",
+                "compensation": {
+                    "type": "NONE",
+                    "amount": 0
+                },
+                "metadata": {}
+            }
+        ],
+        "prices": {
+            "virtual_currency_price": [],
+            "base_real_money_prices": {
+                "default": {
+                    "code": "USD",
+                    "amount": "100.00",
+                    "expiration_seconds": "0"
+                }
+            },
+            "real_money_overrides": {},
+            "variable_price": {}
+        },
+        "prerequisites": [],
+        "giftable": false,
+        "actions": [],
+        "bonus_sets": [],
+        "spa_access": [],
+        "restricted": [],
+        "payment_group": [],
+        "notification_single_purchase": {},
+        "metadata": {},
+        "fulfillment_type": "COMPENSATION",
+        "merge_quantity": true,
+        "rewards": [],
+        "visible": true,
+        "purchasable": true
+    }
+]

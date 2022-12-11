@@ -1,0 +1,51 @@
+app_env:
+    cats:
+        platform-audit:
+            enabled: true
+            host: snitch
+            port: 55555
+        capi:
+            disabled: false
+            validation:
+                request: true
+                response: true
+            rabbit:
+                port: 5672
+                host: "rabbitmq"
+                vhost: "platform"
+                username: "test"
+                password: "test"
+        workers:
+            publisher:
+                main-notification:
+                    catalog-critical-service-hosts.prodo: 'wiremock:8080'
+                    catalog-other-service-hosts.other: 'wiremock:8080'
+                coupon-notification:
+                    catalog-critical-service-hosts.prodo: 'wiremock:8080'
+                    catalog-other-service-hosts.other: 'wiremock:8080'
+                catalog-status-consumer-hosts:
+                    catool: 'wiremock:8080'
+                    coupons: 'wiremock:8080'
+                validation-enabled: true
+        title.tcs-host: 'wiremock:8080'
+        health-check.enabled: 'true'
+        cluster.ignite.domain: 'localhost'
+        web-client.timeout: 2s
+        catalog:
+            cache-for-active-enabled: 'false'
+            activation-interval: 5s
+        entity:
+            cache-for-storefront-categories-enabled: 'false'
+            namespaces-to-extract-name: 'wot'
+        cluster:
+            ignite:
+                zookeeper:
+                  connection-string: 'zookeeper:2181'
+                  root-path: /cats
+                cluster-discovery-type: 'ZOOKEEPER'
+        emitter.registry-host: 'wiremock:8080'
+        catool.auth-secret-key: 'test-secret_key'
+        franz:
+            domain: 'wiremock:8080'
+            server-api-key: '01E7J6MGNE3EZ1VGQGB4SCRWJK'
+            enabled: 'true'

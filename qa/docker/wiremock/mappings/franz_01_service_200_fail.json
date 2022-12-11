@@ -1,0 +1,25 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "urlPattern": "/streams/api/v1/pushEvent/itests.np.catalogs.catalog_publish_v1",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$..[?(@.catalog_code=~/ru.franz_200_fail-MAIN-\\d*/i)]"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "body": {
+        "success": false,
+        "result_code": "franz_200_error_code"
+      }
+    }
+  }
+}
+

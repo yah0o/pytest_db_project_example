@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/catalog_with_the_same_code_second_invalid.zip"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/octet-stream"
+    },
+    "bodyFileName": "catalogs/catalog_with_the_same_code_second_invalid.zip"
+  }
+}

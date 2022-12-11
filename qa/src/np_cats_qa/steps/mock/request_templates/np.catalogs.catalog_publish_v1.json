@@ -1,0 +1,7 @@
+{
+  "body": {
+    "title_code": "$title_code",
+    "catalog_code": "$catalog_code",
+    "catalog_uri": "http://cats-domain.net/api/v1/catalogs/$catalog_code"
+  }
+}

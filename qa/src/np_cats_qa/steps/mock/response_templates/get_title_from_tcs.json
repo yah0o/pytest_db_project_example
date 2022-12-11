@@ -1,0 +1,80 @@
+{
+    "success": true,
+    "result_code": "OK",
+    "titles": [
+        {
+            "access": true,
+            "state": true,
+            "id": "838860804",
+            "title_id": "4",
+            "friendly_name": "World of Tanks Blitz",
+            "pgn": "test",
+            "pop": "ru",
+            "code": "ru.test",
+            "notification_single_purchase": {},
+            "notification_multi_purchase": {},
+            "created_at": "2018-03-15T22:10:29.196Z",
+            "updated_at": "2018-03-15T22:10:29.196Z",
+            "ggapi": {},
+            "webhook_gzip_accepted": false,
+            "automatic_registration": false,
+            "internal": false,
+            "external_product_cdn": false,
+            "enforce_prerequisites": true,
+            "event_schemas": {},
+            "document_schemas": {},
+            "namespaces": [
+                {
+                    "id": "3602879719076265984",
+                    "title_id": "4",
+                    "key": "ru.test.players",
+                    "entity_type_id": 0,
+                    "full_title_id": "838860804"
+                },
+                {
+                    "id": "3602879719076265985",
+                    "title_id": "4",
+                    "key": "ru.test.clans",
+                    "entity_type_id": 1,
+                    "full_title_id": "838860804"
+                }
+            ],
+            "title_versions": [
+                {
+                    "id": "f6ec772f-2b5b-4cc1-aeb5-7cc515b5d0de",
+                    "name": "initial",
+                    "active": true,
+                    "server_api_key": "afae6823-d66b-4416-a69b-027b1dfad33d",
+                    "client_api_key": "2fff352e-0a6f-470f-840c-a95332abdde7",
+                    "allowed_client_apis": {},
+                    "dependent_title_versions": [],
+                    "notification_single_purchase": {},
+                    "notification_multi_purchase": {},
+                    "default": true,
+                    "catalogs_activations": [
+                        {
+                            "catalog": "ru.test-MAIN-1",
+                            "active_at": "1548787558"
+                        }
+                    ]
+                }
+            ],
+            "title_permissions": {
+                "override": {},
+                "catalog": {},
+                "client_api": {
+                    "api_list": [],
+                    "white_list": false
+                },
+                "server_api": {
+                    "api_list": [],
+                    "white_list": false
+                }
+            },
+            "permitting_titles": [],
+            "shared_titles": [],
+            "type": "game",
+            "public": true
+        }
+    ]
+}

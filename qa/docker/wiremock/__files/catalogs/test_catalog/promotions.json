@@ -1,0 +1,1219 @@
+[
+    {
+        "id": "52343865-1140-4a2b-b4f5-760759152f8e",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "discount_duped_override_promotion_2",
+        "start_time": "500",
+        "end_time": "4676462000",
+        "friendly_name": "duped over pr 2",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_pro_vc_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_vc_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_duped_override_store"
+            }
+        ],
+        "friendly_description": "shares an override in common with discount_duped_override_promotion_1"
+    },
+    {
+        "id": "cabfe7b9-2fe4-4f20-bf0b-88211d09160b",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "discount_duped_override_promotion_1",
+        "start_time": "500",
+        "end_time": "4676462000",
+        "friendly_name": "duped over pr 1",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_pro_vc_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_vc_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_duped_override_store"
+            }
+        ],
+        "friendly_description": "shares an override in common with discount_duped_override_promotion_2"
+    },
+    {
+        "id": "1a6a00dc-70ad-4b16-877f-776e6a3a925a",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "extra_product_promotion_2",
+        "start_time": "10000",
+        "end_time": "4676410000",
+        "friendly_name": "promo extra product",
+        "override_refs": [],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_default"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "promotion_empty_store_2"
+            }
+        ],
+        "friendly_description": "references two products"
+    },
+    {
+        "id": "f2feadb1-34a4-4acc-a811-27130e734aa7",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "discount_fixed_vc_promotion",
+        "start_time": "500",
+        "end_time": "4676462000",
+        "friendly_name": "fixed vc promo",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_fixed_vc_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_vc_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_fixed_vc_discount_store"
+            }
+        ],
+        "friendly_description": "fixed vc promo"
+    },
+    {
+        "id": "1e2c4cd7-a9e0-4414-a99a-550b209f55a1",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "test_promotion",
+        "start_time": "400",
+        "end_time": "500",
+        "friendly_name": "Test Promotion",
+        "override_refs": [
+            {
+                "title_code": "test_override",
+                "code": "ru.nptst"
+            }
+        ],
+        "product_refs": [],
+        "storefront_refs": [],
+        "friendly_description": "Sample promo event"
+    },
+    {
+        "id": "c317e55d-e26f-4cc8-b65e-38aaa6d58650",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "discount_abs_real_promotion",
+        "start_time": "500",
+        "end_time": "4676462000",
+        "friendly_name": "abs real promo",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_abs_real_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_real_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_abs_real_store"
+            }
+        ],
+        "friendly_description": "abs real promo"
+    },
+    {
+        "id": "fab57a96-d80a-4af6-ab6f-3623ba7efbaf",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "discount_pct_add_real_promotion",
+        "start_time": "500",
+        "end_time": "4676462000",
+        "friendly_name": "pa real promo",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_add_real_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_real_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_add_real_store"
+            }
+        ],
+        "friendly_description": "pa real promo"
+    },
+    {
+        "id": "dd76079b-62c5-44cb-9160-7dc89bae16d1",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "pct_pro_zone_discount_promotion",
+        "start_time": "500",
+        "end_time": "4679462000",
+        "friendly_name": "promo pct pro zone",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_pro_with_zone_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_vc_price"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_real_price"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_vc_and_real_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store_pct_pro_zone_discount"
+            }
+        ],
+        "friendly_description": "promo that applies pct_pro discount with zone"
+    },
+    {
+        "id": "7d7b1865-3d9c-418b-824e-625db8c2e87b",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "pct_pro_zone_and_vc_discount_promotion",
+        "start_time": "500",
+        "end_time": "4679462000",
+        "friendly_name": "promo pct pro zone vc",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_pro_with_zone_and_vc_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_vc_price"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_real_price"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_vc_and_real_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store_pct_pro_zone_vc_discount"
+            }
+        ],
+        "friendly_description": "promo that applies pct_pro discount with zone and vc"
+    },
+    {
+        "id": "26494d73-58c7-4203-83b5-8bdfaa5502c0",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "many_discounts_second_half_promotion",
+        "start_time": "800",
+        "end_time": "4676562000",
+        "friendly_name": "first half promo",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_pro_real_override"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_add_real_override"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_fixed_real_override"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_abs_real_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_vc_and_real_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_multiple_promos_store"
+            }
+        ],
+        "friendly_description": "contains second half of discounts"
+    },
+    {
+        "id": "5c0c5a8b-61c1-4cb8-8ac1-ea7b42c0f68b",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "discount_abs_vc_promotion",
+        "start_time": "500",
+        "end_time": "4676462000",
+        "friendly_name": "abs vc promo",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_abs_vc_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_vc_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_abs_vc_discount_store"
+            }
+        ],
+        "friendly_description": "abs vc promo"
+    },
+    {
+        "id": "4e51c443-9a91-4a9f-8a8a-a15cab89354d",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "blank_fields_override_promotion",
+        "start_time": "500",
+        "end_time": "4676462000",
+        "friendly_name": "promo blank bf over",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_blank_bool_fields_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_true_bools_override_product"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_blank_fields_override_store"
+            }
+        ],
+        "friendly_description": "promo references override that does not affect bool fields"
+    },
+    {
+        "id": "cf62c10b-73db-47bd-98ec-67039f2828fa",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "discount_excess_fixed_real_promotion",
+        "start_time": "500",
+        "end_time": "4676462000",
+        "friendly_name": "fx exc real promo",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_excess_fixed_real_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_real_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_excess_fixed_real_store"
+            }
+        ],
+        "friendly_description": "fixed discounts are so high, product price hits zero or below."
+    },
+    {
+        "id": "e9e01502-2b2a-4de2-b2cd-cb21b634121f",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "discount_fixed_real_promotion",
+        "start_time": "500",
+        "end_time": "4676462000",
+        "friendly_name": "fx real promo",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_fixed_real_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_real_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_fixed_real_store"
+            }
+        ],
+        "friendly_description": "fx real promo"
+    },
+    {
+        "id": "e29fd8f5-8853-477f-9954-8bbb6c6f8ded",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "discount_pct_pro_vc_promotion",
+        "start_time": "500",
+        "end_time": "4676462000",
+        "friendly_name": "pct pro vc promo",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_pro_vc_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_vc_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_pro_vc_store"
+            }
+        ],
+        "friendly_description": "pct pro vc promo"
+    },
+    {
+        "id": "4f116543-31d5-4d60-b7f2-3b8a252c6f08",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "many_discounts_full_promotion",
+        "start_time": "500",
+        "end_time": "4676462000",
+        "friendly_name": "many discounts promo",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_pro_vc_override"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_add_vc_override"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_fixed_vc_override"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_abs_vc_override"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_pro_real_override"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_add_real_override"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_fixed_real_override"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_abs_real_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_vc_and_real_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_many_discounts_store"
+            }
+        ],
+        "friendly_description": "promotion that applies a lot of discounts"
+    },
+    {
+        "id": "0215c385-47b4-470e-ac7f-0597622a219e",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "discount_excess_fixed_vc_promotion",
+        "start_time": "500",
+        "end_time": "4676462000",
+        "friendly_name": "exc fixed vc promo",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_excess_fixed_vc_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_vc_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_excess_fixed_vc_discount_store"
+            }
+        ],
+        "friendly_description": "discounts a product's vc price to the point at or below zero"
+    },
+    {
+        "id": "7445aba9-d8ae-47f1-888f-c4520519bf74",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "discount_pct_add_vc_promotion",
+        "start_time": "500",
+        "end_time": "4676462000",
+        "friendly_name": "pct add vc promo",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_add_vc_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_vc_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_add_vc_store"
+            }
+        ],
+        "friendly_description": "pct add vc promo"
+    },
+    {
+        "id": "7ac3ec27-fec7-4442-9f10-bd38394be3a6",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "discount_pct_pro_real_promotion",
+        "start_time": "500",
+        "end_time": "4676462000",
+        "friendly_name": "pp real promo",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_pro_real_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_real_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_pro_real_store"
+            }
+        ],
+        "friendly_description": "pp real promo"
+    },
+    {
+        "id": "05d72298-2126-4bea-97e4-3faeadc0d491",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "basic_discount_promotion",
+        "start_time": "500",
+        "end_time": "4679462000",
+        "friendly_name": "promo w basic disc",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_basic_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_with_discount"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_xp"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_gold"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store_with_discount"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_storefront_xp"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store"
+            }
+        ],
+        "friendly_description": "promo that applies a basic discount"
+    },
+    {
+        "id": "14e88dbb-4f07-4459-a596-8a408dc6dff4",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "many_discounts_first_half_promotion",
+        "start_time": "500",
+        "end_time": "4676462000",
+        "friendly_name": "second half promo",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_pro_vc_override"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_pct_add_vc_override"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_fixed_vc_override"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_abs_vc_override"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_discount_vc_and_real_price"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_multiple_promos_store"
+            }
+        ],
+        "friendly_description": "contains second half of discounts"
+    },
+    {
+        "id": "5b5fdeb7-1ac1-4531-b215-adce17d9c060",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "promotion_expired",
+        "start_time": "500",
+        "end_time": "600",
+        "friendly_name": "Promotion Expired",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_real_money"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "product_with_expired_promo"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "product_vc_with_expired_promo"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store"
+            }
+        ],
+        "friendly_description": "Dev Promotion Expired"
+    },
+    {
+        "id": "5b6fdeb7-1ac1-4531-b215-adce14d9c060",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "test_override_promo",
+        "start_time": "500",
+        "end_time": "600",
+        "friendly_name": "Promotion Expired",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_real_money"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "product_with_expired_promo"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store"
+            }
+        ],
+        "friendly_description": "Dev Promotion Expired"
+    },
+    {
+        "id": "65d5e8e0-8576-4dc5-88cb-5a587f60f2fd",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "promotion_not_started",
+        "start_time": "2237932800",
+        "end_time": "2238883200",
+        "friendly_name": "Promotion Expired",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_discount_real_money"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "product_with_promo_not_started"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "product_vc_with_promo_not_started"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store"
+            }
+        ],
+        "friendly_description": "Dev Promotion Not Started"
+    },
+    {
+        "id": "65d5e8e0-8576-4dc5-88cb-5a000f60f2fd",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "promotion_with_two_overrides",
+        "start_time": "400",
+        "end_time": "2238883200",
+        "friendly_name": "Promotion With 2 Overrides",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "override_1"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "override_2"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "product_with_promo_and_two_overrides"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "product_vc_with_promo_and_two_overrides"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store"
+            }
+        ],
+        "friendly_description": "Promotion With Two Overrides"
+    },
+    {
+        "id": "6ff75907-d4ae-43b7-afbc-059713279f2e",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "promotion_with_one_discount",
+        "start_time": "400",
+        "end_time": "2238883200",
+        "friendly_name": "Promotion With One Discount",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "override_with_discount"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "override_without_discount"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "product_with_one_discount"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "product_vc_with_one_discount"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store"
+            }
+        ],
+        "friendly_description": "Promotion With One Discount"
+    },
+    {
+        "id": "dfa0a3ff-bdee-4141-b219-f790c5511c5a",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "promotion_with_overlap_first",
+        "start_time": "1520173000",
+        "end_time": "1520174000",
+        "friendly_name": "Promotion With Overlap Time First",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "override_1"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_default"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_storefront_overlap"
+            }
+        ],
+        "friendly_description": "Promotion With Overlap Time First"
+    },
+    {
+        "id": "e68d326a-8154-42c9-ade5-50fc51ed23bc",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "promotion_with_overlap_second",
+        "start_time": "1520174000",
+        "end_time": "1520175000",
+        "friendly_name": "Promotion With Overlap Time Second",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "override_2"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_default"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_storefront_overlap"
+            }
+        ],
+        "friendly_description": "Promotion With Overlap Time Second"
+    },
+    {
+        "id": "6d6a3855-79e3-4720-93da-ab11cfd98fc3",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "promotion_make_visible",
+        "start_time": "1552666530",
+        "end_time": "1552667130",
+        "friendly_name": "Promotion Which makes invisible product visible",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "override_make_visible"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_invisible"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store_invisible"
+            }
+        ],
+        "friendly_description": "Promotion Which makes invisible product visible"
+    },
+    {
+        "id": "3a543ec2-64c1-44f7-91ef-f46ff93ed4e2",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "promotion_make_visible_via_storefront",
+        "start_time": "1552666530",
+        "end_time": "1552667130",
+        "friendly_name": "Promotion Which makes invisible product visible via storefront",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "override_make_visible_via_storefront"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_invisible_not_in_storefront"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store_invisible_no_product_reference"
+            }
+        ],
+        "friendly_description": "Promotion Which makes invisible product visible"
+    },
+    {
+        "id": "751e58c5-f62c-4be7-b3d2-c35f45ddfa5a",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "promotion_with_frontline",
+        "start_time": "1514764800",
+        "end_time": "1893456000",
+        "friendly_name": "Promotion With Overlap Time Second",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "override_2"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_frontline_tank_buy_with_promo"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store_frontline"
+            }
+        ],
+        "friendly_description": "Promotion With Frontline Product"
+    },
+    {
+        "id": "85ae6dc8-9923-489c-9a15-270a8967d28c",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "promotion_with_frontline_and_lqo",
+        "start_time": "1514764800",
+        "end_time": "1893456000",
+        "friendly_name": "Promotion With Overlap Time Second",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "override_1"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_frontline_tank_buy_with_lqo"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store_frontline"
+            }
+        ],
+        "friendly_description": "Promotion With Frontline Product"
+    },
+    {
+        "id": "85ae6dc8-9923-489c-9a15-270a8969d28c",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "promotion_with_categories",
+        "start_time": "500",
+        "end_time": "1893456000",
+        "friendly_name": "Promotion With Categories",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "override_with_categories"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "product_without_categories"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "product_with_categories"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "product_rm_with_categories"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store_with_override"
+            }
+        ],
+        "friendly_description": "Promotion With Categories"
+    },
+    {
+        "id": "724c7022-7b01-496c-bad7-d5d922cdb229",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "promotion_change_categories",
+        "start_time": "1514764800",
+        "end_time": "1893456000",
+        "friendly_name": "Promotion Changing Product Category",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "override_change_product_categories"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_with_categories_changed_by_promo"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_with_category_not_in_storefront"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store_with_categories_and_promo"
+            }
+        ],
+        "friendly_description": "Promotion Which Changes Product Category"
+    },
+    {
+        "id": "85ae6dc8-9923-489c-9a34-270a8969d28c",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "promotion_without_categories",
+        "start_time": "500",
+        "end_time": "1893456000",
+        "friendly_name": "Promotion Without Categories",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "override_without_categories"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "product_without_categories"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "product_with_categories"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store_with_override_no_category"
+            }
+        ],
+        "friendly_description": "Promotion Without Categories"
+    },
+    {
+        "id": "85ae6dc8-0000-489c-9a34-270a8969d28c",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "promotion_not_active",
+        "start_time": "500",
+        "end_time": "1893456000",
+        "active": false,
+        "friendly_name": "Promotion Not Active",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "override_with_discount"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_vc_with_promo_not_active"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_rm_with_promo_not_active"
+            },
+            {
+                "title_code": "ru.nptst",
+                "code": "test_product_variable_with_promo_not_active"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store_with_promo_not_active"
+            }
+        ],
+        "friendly_description": "Promotion Not ACtive"
+    },
+    {
+        "id": "85ae6dc8-7676-489c-9a34-270a8969d28c",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "promo_several_fields_overridden",
+        "start_time": "500",
+        "end_time": "1893456000",
+        "active": true,
+        "friendly_name": "Promotion Not Active",
+        "override_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "override_change_several_product_fields"
+            }
+        ],
+        "product_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "product_rm_with_categories"
+            }
+        ],
+        "storefront_refs": [
+            {
+                "title_code": "ru.nptst",
+                "code": "test_store"
+            }
+        ],
+        "friendly_description": "Promotion with several fields override"
+    },
+    {
+        "id": "94ae6dc8-7676-489c-9a34-270a8969d24c",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "new_promo_several_fields_overridden",
+        "start_time": "500",
+        "end_time": "1893456000",
+        "active": true,
+        "friendly_name": "Promotion Active",
+        "override_refs": [
+        ],
+        "product_refs": [
+        ],
+        "storefront_refs": [
+        ],
+        "storefront_product_refs": [
+            {
+                "product_code": "product_rm_with_categories",
+                "storefront_code": "test_store",
+                "override": "new_override_change_several_product_fields"
+            }
+        ],
+        "limited_quantity": [
+            {
+                "product_code": "product_rm_with_categories",
+                "realm_limit": 20,
+                "personal_limit": 10,
+                "show_limit_exceeded": true
+            }
+        ],
+        "friendly_description": "New promotion with several fields override"
+    },
+    {
+        "id": "7cbc6e76-f356-11eb-bbd4-8c85902646ff",
+        "metadata": {},
+        "title_code": "ru.nptst",
+        "code": "new_promo_several_fields_overridden_empty_limits",
+        "start_time": "500",
+        "end_time": "1893456000",
+        "active": true,
+        "friendly_name": "Promotion Active",
+        "override_refs": [
+        ],
+        "product_refs": [
+        ],
+        "storefront_refs": [
+        ],
+        "storefront_product_refs": [
+            {
+                "product_code": "product_rm_wo_categories",
+                "storefront_code": "test_store",
+                "override": "new_override_change_several_product_fields"
+            }
+        ],
+        "limited_quantity": [
+            {
+                "product_code": "product_rm_wo_categories",
+                "show_limit_exceeded": true
+            }
+        ],
+        "friendly_description": "New promotion with several fields override"
+    }
+]

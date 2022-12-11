@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/catalog_with_capital_letters_in_params.zip"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/octet-stream"
+    },
+    "bodyFileName": "catalogs/catalog_with_capital_letters_in_params.zip"
+  }
+}

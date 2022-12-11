@@ -1,0 +1,13 @@
+FROM host [artifactory]
+
+RUN apt-get update && apt-get install -y wget netcat
+
+RUN wget [path to lib]
+
+RUN mv snitch-latest /usr/local/bin
+
+RUN chmod +x /usr/local/bin/snitch-latest
+
+ENV CLICKHOUSE_URL=tcp://clickhouse:9000
+
+CMD snitch-latest schema-init -c $CLICKHOUSE_URL -t snitch_events && snitch-latest run -i 478EBE18-B997-43CA-A845-00DED2303AE6 -b 1024000 -f 1 -p 55555 -h 0.0.0.0 -c $CLICKHOUSE_URL -t snitch_events -n 1

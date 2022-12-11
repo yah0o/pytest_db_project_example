@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPattern": "/streams/api/v1/pushEvent/itests.np.catalogs.catalog_publish_v1"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "body" : {
+        "success": true
+      }
+    }
+  }
+}
+

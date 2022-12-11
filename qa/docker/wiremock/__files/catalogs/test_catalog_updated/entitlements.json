@@ -1,0 +1,344 @@
+[
+    {
+        "entitlement_id": "90fba758-f51b-4b74-b05a-da71b0f5f439",
+        "entitlement_code": "test_entitlement_generic",
+        "type": "OWNERSHIP",
+        "friendly_name": "Generic Test Entitlement",
+        "max_amount": 1,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 25,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    },
+    {
+        "entitlement_id": "4ced81a9-14b2-9876-b73f-b2b00056f1d6",
+        "entitlement_code": "premium_plus",
+        "type": "OWNERSHIP",
+        "tags": [],
+        "friendly_name": "Premium Plus Entitlement",
+        "max_amount": 0,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 25,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    },
+    {
+        "entitlement_id": "fc7a3098-f41f-11eb-bbd4-8c85902646ff",
+        "entitlement_code": "premium_subs",
+        "type": "OWNERSHIP",
+        "tags": [],
+        "friendly_name": "Premium Subs Entitlement",
+        "max_amount": 0,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 25,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    },
+    {
+        "entitlement_id": "5345ea17-5624-42f1-b22d-6001299dd49d",
+        "entitlement_code": "barbarian_bundle_owner",
+        "type": "OWNERSHIP",
+        "friendly_name": "Barbarian Bundle Owner",
+        "max_amount": 1,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 2,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    },
+    {
+        "entitlement_id": "38c046c9-7416-4041-95d4-2380d29f837f",
+        "entitlement_code": "max_amount_more_0",
+        "type": "OWNERSHIP",
+        "friendly_name": "max amount 1",
+        "max_amount": 0,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 1,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 2
+    },
+    {
+        "entitlement_id": "fcedfbfd-e255-4595-a79e-8ea21a4f2cdf",
+        "entitlement_code": "test_entitlement_receipt",
+        "type": "OWNERSHIP",
+        "friendly_name": "Test Entitlement Receipt",
+        "max_amount": 1,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 1,
+        "reported": false,
+        "metadata": {
+            "receipt": {
+                "data": {
+                    "@type": "Jsonb",
+                    "value": "{\"some_key\":\"some_value\",\"id\":456}"
+                }
+            }
+        },
+        "active": true,
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    },
+    {
+        "entitlement_id": "33bb471b-d5bf-4cba-b231-221f86941d9f",
+        "entitlement_code": "premium_time_30_days",
+        "type": "OWNERSHIP",
+        "friendly_name": "Premium Time",
+        "max_amount": 0,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 2,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    },
+    {
+        "entitlement_id": "5ca8bc3f-902a-411a-aa32-a4c9ef381e68",
+        "entitlement_code": "generic_prereq_entitlement_b",
+        "type": "ACCESS",
+        "friendly_name": "Entitlement for prereq testing",
+        "max_amount": 0,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 1,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    },
+    {
+        "entitlement_id": "8c362ea9-755f-497b-92d7-cd8146471d8c",
+        "entitlement_code": "generic_prereq_entitlement_a",
+        "type": "ACCESS",
+        "friendly_name": "Entitlement for prereq testing",
+        "max_amount": 0,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 1,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    },
+    {
+        "entitlement_id": "cdb3a156-91f4-4f93-9495-8775cb0edd9e",
+        "entitlement_code": "test_entitlement_default",
+        "type": "OWNERSHIP",
+        "friendly_name": "Default Inventory Entitlement",
+        "max_amount": 1,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 1,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    },
+    {
+        "entitlement_id": "445a6150-0ff7-4125-8f5d-0afffbda2910",
+        "entitlement_code": "access_entitlement",
+        "type": "OWNERSHIP",
+        "friendly_name": "Access to the game",
+        "max_amount": 0,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 2,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    },
+    {
+        "entitlement_id": "33823a6b-1782-4270-b9cc-a466bc6ac24a",
+        "entitlement_code": "magic_boots",
+        "type": "OWNERSHIP",
+        "friendly_name": "Magic Boots",
+        "max_amount": 1,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 2,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    },
+    {
+        "entitlement_id": "570ec51d-4665-4032-8493-56610821e864",
+        "entitlement_code": "test_entitlement_frontline_tank",
+        "type": "OWNERSHIP",
+        "friendly_name": "Frontline Tank which can be rent",
+        "max_amount": 0,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 0,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    },
+    {
+        "entitlement_id": "bfbc7447-c7c3-4a98-b3cc-94c061bdbec7",
+        "entitlement_code": "frontline_token",
+        "type": "TOKEN",
+        "friendly_name": "Frontline Token",
+        "max_amount": 0,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 0,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    },
+     {
+        "entitlement_id": "9784f6f9-3508-4824-a54b-d8a2483367f0",
+        "entitlement_code": "entitlement_with_prereq",
+        "type": "OWNERSHIP",
+        "friendly_name": "Entitlement with prerequisites",
+        "max_amount": 0,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 0,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+         "prerequisites": [
+            {
+                "code": "access_entitlement",
+                "op": "GREATER_THAN",
+                "value": 1,
+                "is_global": true
+            }
+        ],
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    },
+    {
+        "entitlement_id": "9a5a6a08-ed1b-48dd-b277-d4d8e4759f87",
+        "entitlement_code": "test_slot",
+        "type": "OWNERSHIP",
+        "friendly_name": "test_slot",
+        "max_amount": 0,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 0,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "prerequisites": [],
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    },
+    {
+        "entitlement_id": "ba54b05a-1286-4a30-8e6f-4cf84b4bf9e0",
+        "entitlement_code": "test_tank",
+        "type": "OWNERSHIP",
+        "friendly_name": "test_tank",
+        "max_amount": 0,
+        "relationships": [],
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "version": 0,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "prerequisites": [],
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    }
+]

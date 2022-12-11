@@ -1,0 +1,40 @@
+version: '3.3'
+volumes:
+  rmq-data:
+  redis-data:
+services:
+
+  cats:
+    build:
+      dockerfile: ci/images/app/Dockerfile.m1
+      context: ../..
+
+  postgres:
+    image: artifactory.wgdp.io/wtp-docker/shared/postgres:11.12-alpine_arm64
+
+  rabbitmq:
+    image: artifactory.wgdp.io/wtp-docker/shared/rabbitmq:3.8.4-management-alpine_arm64
+
+  redis:
+    image: artifactory.wgdp.io/wtp-docker/shared/redis:4.0.14-alpine_arm64
+
+  wiremock:
+    image: artifactory.wgdp.io/wtp-docker/shared/wiremock:2.30.1-alpine_arm64
+
+  zookeeper:
+    image: artifactory.wgdp.io/wtp-docker/estrellas/zk
+
+  clickhouse:
+    image: artifactory.wgdp.io/wtp-docker/shared/clickhouse-server-frankenstein:20.6.7.4_arm64
+
+  snitch:
+    image: artifactory.wgdp.io/wtp-docker/shared/snitch:0.2.0_arm64
+    #        build:
+    #            context: snitch
+    #            dockerfile: Dockerfile.m1
+    #            args:
+    #                git_user: ${GIT_USER}
+    #                git_password: ${GIT_PASSWORD}
+    volumes:
+      - './snitch/entrypoint.sh:/entrypoint.sh'
+    entrypoint: /entrypoint.sh

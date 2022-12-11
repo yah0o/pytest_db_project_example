@@ -1,0 +1,16 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "urlPattern": "/catalog/api/v1/activated",
+    "bodyPatterns": [{
+        "matchesJsonPath": "$..[?(@.catalog_code=~/ru.activated_400-MAIN-\\d*/i)]"
+    }]
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

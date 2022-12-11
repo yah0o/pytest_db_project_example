@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": [
+      "error"
+    ],
+  "properties": {
+    "error": {
+      "type": "object",
+      "required": [
+        "code",
+        "context"
+      ],
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "Error type which is registered in error object registry"
+        },
+        "context": {
+          "type": "object",
+          "required": [
+            "description"
+          ],
+          "properties": {
+            "description": {
+            }
+          }
+        }
+      }
+    }
+  }
+}

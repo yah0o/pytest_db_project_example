@@ -1,0 +1,26 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "urlPattern": "/catalog/api/v1/prepare",
+    "bodyPatterns": [{
+        "matchesJsonPath": "$..[?(@.catalog_code=~/ru.prepare_500-MAIN-\\d*/i)]"
+    }]
+  },
+  "response": {
+    "status": 500,
+    "jsonBody": {
+      "success": false,
+      "result_code": "failed_result_code",
+      "error": {
+        "context": {
+            "code": "failed_code",
+            "message": ["failed to publish"]
+        }
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

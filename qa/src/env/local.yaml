@@ -1,0 +1,28 @@
+cats:
+  http:
+    host: localhost
+    port: 8091
+  db:
+    host: 127.0.0.1
+    port: 5432
+    db: cats
+    user: cats
+    password: cats
+  capi:
+    client_emitter_id: "123456789"
+    stable_capi: "[path to artifact]"
+    unstable_capi: "[path to artifact]"
+    draft_capi_path: "./np_cats_qa/data/contracts"
+    app_id: cats
+    rabbit:
+      host: localhost
+      port: 5672
+      username: test
+      password: test
+      vhost: platform
+
+wiremock:
+  host: localhost
+  port: 8080
+
+data: !include 'test_data/np.test.yaml'

@@ -1,0 +1,288 @@
+{
+  "id": "commerce.fetch-storefront-categories.v2",
+  "description": "Return lists of categories (fetchStorefrontCategories method, former fetchCategories)",
+  "documentation": "https://jira.wargaming.net/browse/FREYA-995",
+  "trigger": {
+    "type": "request.commerce.fetch-storefront-categories.v2",
+    "description": "",
+    "payload_schema": {
+      "type": "object",
+      "description": "",
+      "properties": {
+        "title_code": {
+          "type": "string",
+          "description": "Code of a title within purchase to which product belongs",
+          "tag": "common.title-code.v1",
+          "minLength": 1,
+          "maxLength": 50
+        },
+        "storefront": {
+          "type": "string",
+          "description": "Storefront code",
+          "tag": "commerce.storefront.v1",
+          "minLength": 1,
+          "maxLength": 50
+        },
+        "language": {
+          "type": "string",
+          "description": "Language",
+          "tag": "commerce.language-code.v1",
+          "minLength": 2,
+          "maxLength": 9
+        },
+        "activation_statuses": {
+          "type": "array",
+          "description": "Filter by activation status",
+          "items": {
+            "type": "string",
+            "description": "",
+            "tag": "commerce.storefront-category-status.v1",
+            "enum": [
+              "expired",
+              "active",
+              "waiting_for_activation"
+            ]
+          },
+          "minItems": 1,
+          "maxItems": 3
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "title_code",
+        "storefront"
+      ]
+    }
+  },
+  "reaction": {
+    "type": "response.commerce.fetch-storefront-categories.v2",
+    "description": "",
+    "payload_schema": {
+      "type": "object",
+      "description": "",
+      "properties": {
+        "categories": {
+          "type": "array",
+          "description": "List of categories",
+          "items": {
+            "type": "object",
+            "description": "",
+            "additionalProperties": false,
+            "tag": "commerce.storefront-category.v1",
+            "properties": {
+              "code": {
+                "type": "string",
+                "description": "Category code",
+                "tag": "commerce.category-code.v1",
+                "minLength": 1
+              },
+              "sort_number": {
+                "type": "integer",
+                "description": "Category sort number",
+                "tag": "common.uint64.v2",
+                "minimum": 0,
+                "maximum": 9223372036854775807
+              },
+              "activation_status": {
+                "type": "string",
+                "description": "Activation status",
+                "tag": "commerce.storefront-category-status.v1",
+                "enum": [
+                  "expired",
+                  "active",
+                  "waiting_for_activation"
+                ]
+              },
+              "parent_code": {
+                "type": "string",
+                "description": "Parent category code",
+                "tag": "commerce.category-code.v1",
+                "minLength": 1
+              },
+              "metadata": {
+                "type": "object",
+                "description": "Category metadata",
+                "additionalProperties": false,
+                "tag": "common.map.v1",
+                "patternProperties": {
+                  "^[a-zA-Z_0-9-]{1,128}$": {}
+                }
+              }
+            },
+            "required": [
+              "code",
+              "sort_number",
+              "activation_status"
+            ]
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "categories"
+      ]
+    }
+  },
+  "errors": [
+    {
+      "code": "common.v1.internal-server-error",
+      "description": "This error appears when capi server catches an unhandled error",
+      "documentation": "https://confluence.wargaming.net/x/Hw8PHg",
+      "severity": "CRITICAL",
+      "context_schema": {
+        "description": "A generic network platform error",
+        "type": "object",
+        "properties": {
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "code": "common.v1.client-error",
+      "description": "A generic error which usually appears due to the client incorrect request",
+      "documentation": "https://confluence.wargaming.net/x/Hw8PHg",
+      "severity": "MAJOR",
+      "context_schema": {
+        "description": "A generic network platform error",
+        "type": "object",
+        "properties": {
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "code": "common.v1.validation-error",
+      "description": "This error appears when request parameters dont pass a validation check",
+      "documentation": "https://confluence.wargaming.net/x/Hw8PHg",
+      "severity": "MAJOR",
+      "context_schema": {
+        "description": "Generic validation error object. Where KEY is usually name of invalid parameter and VALUE is the reason",
+        "type": "object",
+        "properties": {
+          "problems": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "field": {
+                  "description": "Name of a field which didn't pass the validation",
+                  "type": "string"
+                },
+                "reason": {
+                  "description": "Why a field didn't pass the validation",
+                  "type": "string"
+                },
+                "value": {
+                  "description": "An actual value of filed, which didn't pass the validation"
+                }
+              }
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "code": "commerce.title-not-found.v1",
+      "description": "Title is not found",
+      "documentation": "",
+      "severity": "MINOR",
+      "context_schema": {
+        "type": "object",
+        "description": "",
+        "properties": {
+          "reason": {
+            "type": "string",
+            "description": "Human-readable details of occurred error",
+            "tag": "common.string.v1"
+          },
+          "context": {
+            "type": "object",
+            "description": "Error context description, no stack traces or explicit error codes",
+            "additionalProperties": false,
+            "tag": "commerce.error-context.v1",
+            "patternProperties": {
+              "^[a-zA-Z_0-9-]{1,128}$": {}
+            }
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "reason"
+        ]
+      }
+    },
+    {
+      "code": "commerce.catalog-not-found.v1",
+      "description": "Catalog is not found",
+      "documentation": "",
+      "severity": "MINOR",
+      "context_schema": {
+        "type": "object",
+        "description": "",
+        "properties": {
+          "reason": {
+            "type": "string",
+            "description": "Human-readable details of occurred error",
+            "tag": "common.string.v1"
+          },
+          "context": {
+            "type": "object",
+            "description": "Error context description, no stack traces or explicit error codes",
+            "additionalProperties": false,
+            "tag": "commerce.error-context.v1",
+            "patternProperties": {
+              "^[a-zA-Z_0-9-]{1,128}$": {}
+            }
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "reason"
+        ]
+      }
+    },
+    {
+      "code": "commerce.storefront-not-found.v1",
+      "description": "Storefront is not found in catalog",
+      "documentation": "",
+      "severity": "MINOR",
+      "context_schema": {
+        "type": "object",
+        "description": "",
+        "properties": {
+          "reason": {
+            "type": "string",
+            "description": "Human-readable details of occurred error",
+            "tag": "common.string.v1"
+          },
+          "context": {
+            "type": "object",
+            "description": "Error context description, no stack traces or explicit error codes",
+            "additionalProperties": false,
+            "tag": "commerce.error-context.v1",
+            "patternProperties": {
+              "^[a-zA-Z_0-9-]{1,128}$": {}
+            }
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "reason"
+        ]
+      }
+    }
+  ]
+}

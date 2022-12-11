@@ -1,0 +1,5 @@
+{
+  "catalog_code" : "$catalog_code",
+  "status" : "$status",
+  "reason" : "$reason"
+}

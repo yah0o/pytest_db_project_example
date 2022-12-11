@@ -1,0 +1,1165 @@
+[
+    {
+        "overrides": {
+            "test_product_discount_vc_and_real_price": {
+                "discounts": [
+                    {
+                        "type": "PCT_PRO",
+                        "value": "10",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "*": {
+                "discounts": [
+                    {
+                        "type": "PCT_PRO",
+                        "value": "10",
+                        "vc_currency": "gold",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "test_product_discount_vc_price": {
+                "discounts": [
+                    {
+                        "type": "PCT_PRO",
+                        "value": "10",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "01fa02ad-da08-48d2-b468-3754fcb8ec05",
+        "title_code": "ru.nptst",
+        "code": "test_discount_pct_pro_vc_override",
+        "friendly_name": "pct pro vc disc"
+    },
+    {
+        "overrides": {
+            "test_product_discount_vc_and_real_price": {
+                "discounts": [
+                    {
+                        "type": "FIXED",
+                        "value": "10",
+                        "vc_currency": "gold",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "*": {
+                "discounts": [
+                    {
+                        "type": "FIXED",
+                        "value": "20",
+                        "vc_currency": "gold",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "test_product_discount_vc_price": {
+                "discounts": [
+                    {
+                        "type": "FIXED",
+                        "value": "10",
+                        "vc_currency": "gold",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "da87d4f7-6d8f-4c27-88ba-5f04598949f1",
+        "title_code": "ru.nptst",
+        "code": "test_discount_fixed_vc_override",
+        "friendly_name": "fixed vc discount"
+    },
+    {
+        "overrides": {
+            "test_product_discount_vc_and_real_price": {
+                "discounts": [
+                    {
+                        "type": "ABS",
+                        "value": "80.00",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "RU"
+                    },
+                    {
+                        "type": "ABS",
+                        "value": "90.00",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "FR"
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "test_product_discount_real_price": {
+                "discounts": [
+                    {
+                        "type": "ABS",
+                        "value": "80.00",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "RU"
+                    },
+                    {
+                        "type": "ABS",
+                        "value": "90.00",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "FR"
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "*": {
+                "discounts": [
+                    {
+                        "type": "ABS",
+                        "value": "60.00",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "RU"
+                    },
+                    {
+                        "type": "ABS",
+                        "value": "70.00",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "FR"
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "8872880e-8e2d-4d0b-b826-0c940c8c2225",
+        "title_code": "ru.nptst",
+        "code": "test_discount_abs_real_override",
+        "friendly_name": "abs real override"
+    },
+    {
+        "overrides": {
+            "test_product_discount_vc_and_real_price": {
+                "discounts": [
+                    {
+                        "type": "FIXED",
+                        "value": "10",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "RU"
+                    },
+                    {
+                        "type": "FIXED",
+                        "value": "15",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "FR"
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "test_product_discount_real_price": {
+                "discounts": [
+                    {
+                        "type": "FIXED",
+                        "value": "10",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "RU"
+                    },
+                    {
+                        "type": "FIXED",
+                        "value": "15",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "FR"
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "*": {
+                "discounts": [
+                    {
+                        "type": "FIXED",
+                        "value": "20",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "RU"
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "e0e400c8-ffd3-460b-94e7-b170c365f3da",
+        "title_code": "ru.nptst",
+        "code": "test_discount_fixed_real_override",
+        "friendly_name": "fx real override"
+    },
+    {
+        "overrides": {
+            "test_override_product": {
+                "discounts": [],
+                "fields": {
+                    "metadata": {
+                        "test_namespace": {
+                            "03_prod": {
+                                "@type": "String",
+                                "data": "03_prod"
+                            }
+                        }
+                    }
+                }
+            },
+            "*": {
+                "discounts": [],
+                "fields": {
+                    "metadata": {
+                        "test_namespace": {
+                            "03_prod": {
+                                "@type": "String",
+                                "data": "03_star"
+                            },
+                            "03_star": {
+                                "@type": "String",
+                                "data": "03_star"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "id": "53e290af-0b3d-4d65-b59e-9ad5f8e6acd3",
+        "title_code": "ru.nptst",
+        "code": "test_override_beta",
+        "friendly_name": "applied third"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [
+                    {
+                        "type": "PCT_ADD",
+                        "value": "20",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "US"
+                    }
+                ],
+                "fields": {
+                    "restricted": [
+                        "EU"
+                    ],
+                    "visible": true,
+                    "purchasable": true,
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "f0cecf1a-5430-49a6-87a5-e80561f755c9",
+        "title_code": "ru.nptst",
+        "code": "test_country_restr_override",
+        "friendly_name": "restricts country"
+    },
+    {
+        "overrides": {
+            "test_product_discount_vc_and_real_price": {
+                "discounts": [
+                    {
+                        "type": "PCT_ADD",
+                        "value": "10",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "test_product_discount_real_price": {
+                "discounts": [
+                    {
+                        "type": "PCT_ADD",
+                        "value": "10",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "*": {
+                "discounts": [
+                    {
+                        "type": "PCT_ADD",
+                        "value": "10",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "RU"
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "df659c2e-6053-424c-8a1e-f1d635ff1c3c",
+        "title_code": "ru.nptst",
+        "code": "test_discount_pct_add_real_override",
+        "friendly_name": "pa real override"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [],
+                "fields": {
+                    "friendly_name": "overridden_name",
+                    "entitlements": [
+                        {
+                            "code": "test_entitlement_default",
+                            "amount": 1,
+                            "percent_value": [
+                                {
+                                    "pct": 100,
+                                    "code": "gold"
+                                }
+                            ],
+                            "expiration_type": "NONE",
+                            "expiration_seconds": "0",
+                            "metadata": {}
+                        }
+                    ],
+                    "tags": [
+                        "foo",
+                        "bar"
+                    ],
+                    "payment_group": [
+                        "payment",
+                        "group"
+                    ],
+                    "metadata": {
+                        "test_namespace": {
+                            "added_string": {
+                                "@type": "String",
+                                "data": "this string was added."
+                            }
+                        }
+                    },
+                    "rewards": [
+                        {
+                            "max": 2,
+                            "type": "PRODUCT",
+                            "products": [
+                                {
+                                    "pct": 100,
+                                    "product_ref": {
+                                        "title_code": "ru.nptst",
+                                        "code": "test_product_default"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "visible": true,
+                    "purchasable": true
+                }
+            }
+        },
+        "id": "3b09c0b9-88c6-4e5d-b648-0ad6f89a8653",
+        "title_code": "ru.nptst",
+        "code": "test_override_thorough",
+        "friendly_name": "thorough override"
+    },
+    {
+        "overrides": {
+            "test_product_discount_real_price": {
+                "discounts": [
+                    {
+                        "type": "FIXED",
+                        "value": "60",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "RU"
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "*": {
+                "discounts": [
+                    {
+                        "type": "FIXED",
+                        "value": "60",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "RU"
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "b11ea9fe-e372-4e22-9182-99beef497ae5",
+        "title_code": "ru.nptst",
+        "code": "test_discount_excess_fixed_real_override",
+        "friendly_name": "fx exc real override"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [
+                    {
+                        "type": "PCT_PRO",
+                        "value": "20",
+                        "vc_currency": "gold",
+                        "rm_zone": "",
+                        "rm_country": "US"
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "d34f75c4-2068-463a-bc82-81c1772f8161",
+        "title_code": "ru.nptst",
+        "code": "test_discount_basic_override",
+        "friendly_name": "purchase test over"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [],
+                "fields": {
+                    "friendly_name": "overridden",
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "963819f7-952c-4057-a3b2-6a6e64d6b955",
+        "title_code": "ru.nptst",
+        "code": "test_override",
+        "friendly_name": "generic override"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [
+                    {
+                        "type": "PCT_PRO",
+                        "value": "20",
+                        "vc_currency": "",
+                        "rm_zone": "foobar",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "b2457bfc-9d32-4709-8b09-16396721b690",
+        "title_code": "ru.nptst",
+        "code": "test_discount_pct_pro_with_zone_override",
+        "friendly_name": "discount has zone"
+    },
+    {
+        "overrides": {
+            "test_override_product": {
+                "discounts": [],
+                "fields": {
+                    "metadata": {
+                        "test_namespace": {
+                            "03_prod": {
+                                "@type": "String",
+                                "data": "02_prod"
+                            },
+                            "02_prod": {
+                                "@type": "String",
+                                "data": "02_prod"
+                            },
+                            "03_star": {
+                                "@type": "String",
+                                "data": "02_prod"
+                            }
+                        }
+                    }
+                }
+            },
+            "*": {
+                "discounts": [],
+                "fields": {
+                    "metadata": {
+                        "test_namespace": {
+                            "02_star": {
+                                "@type": "String",
+                                "data": "02_star"
+                            },
+                            "03_prod": {
+                                "@type": "String",
+                                "data": "02_star"
+                            },
+                            "02_prod": {
+                                "@type": "String",
+                                "data": "02_star"
+                            },
+                            "03_star": {
+                                "@type": "String",
+                                "data": "02_star"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "id": "8bc601c4-cf3e-4bc2-a716-f319b070a92a",
+        "title_code": "ru.nptst",
+        "code": "test_override_zeta",
+        "friendly_name": "applied second"
+    },
+    {
+        "overrides": {
+            "test_product_discount_vc_and_real_price": {
+                "discounts": [
+                    {
+                        "type": "PCT_ADD",
+                        "value": "10",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "*": {
+                "discounts": [
+                    {
+                        "type": "PCT_ADD",
+                        "value": "10",
+                        "vc_currency": "gold",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "test_product_discount_vc_price": {
+                "discounts": [
+                    {
+                        "type": "PCT_ADD",
+                        "value": "10",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "5018191a-0414-4445-94b4-88d6f4799a5c",
+        "title_code": "ru.nptst",
+        "code": "test_discount_pct_add_vc_override",
+        "friendly_name": "pct add vc disc"
+    },
+    {
+        "overrides": {
+            "test_override_product": {
+                "discounts": [],
+                "fields": {
+                    "metadata": {
+                        "test_namespace": {
+                            "02_star": {
+                                "@type": "String",
+                                "data": "00_prod"
+                            },
+                            "01_prod": {
+                                "@type": "String",
+                                "data": "00_prod"
+                            },
+                            "03_prod": {
+                                "@type": "String",
+                                "data": "00_prod"
+                            },
+                            "00_prod": {
+                                "@type": "String",
+                                "data": "00_prod"
+                            },
+                            "02_prod": {
+                                "@type": "String",
+                                "data": "00_prod"
+                            },
+                            "01_star": {
+                                "@type": "String",
+                                "data": "00_prod"
+                            },
+                            "03_star": {
+                                "@type": "String",
+                                "data": "00_prod"
+                            }
+                        }
+                    }
+                }
+            },
+            "*": {
+                "discounts": [],
+                "fields": {
+                    "metadata": {
+                        "test_namespace": {
+                            "02_star": {
+                                "@type": "String",
+                                "data": "00_star"
+                            },
+                            "01_prod": {
+                                "@type": "String",
+                                "data": "00_star"
+                            },
+                            "03_prod": {
+                                "@type": "String",
+                                "data": "00_star"
+                            },
+                            "00_prod": {
+                                "@type": "String",
+                                "data": "00_star"
+                            },
+                            "00_star": {
+                                "@type": "String",
+                                "data": "00_star"
+                            },
+                            "02_prod": {
+                                "@type": "String",
+                                "data": "00_star"
+                            },
+                            "01_star": {
+                                "@type": "String",
+                                "data": "00_star"
+                            },
+                            "03_star": {
+                                "@type": "String",
+                                "data": "00_star"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "id": "1468f3ff-4f92-470d-9ae1-8eb020e1a90c",
+        "title_code": "ru.nptst",
+        "code": "test_override_alpha",
+        "friendly_name": "md override"
+    },
+    {
+        "overrides": {
+            "test_override_product": {
+                "discounts": [],
+                "fields": {
+                    "metadata": {
+                        "test_namespace": {
+                            "02_star": {
+                                "@type": "String",
+                                "data": "01_prod"
+                            },
+                            "01_prod": {
+                                "@type": "String",
+                                "data": "01_prod"
+                            },
+                            "03_prod": {
+                                "@type": "String",
+                                "data": "01_prod"
+                            },
+                            "02_prod": {
+                                "@type": "String",
+                                "data": "01_prod"
+                            },
+                            "03_star": {
+                                "@type": "String",
+                                "data": "01_prod"
+                            }
+                        }
+                    }
+                }
+            },
+            "*": {
+                "discounts": [],
+                "fields": {
+                    "metadata": {
+                        "test_namespace": {
+                            "02_star": {
+                                "@type": "String",
+                                "data": "01_star"
+                            },
+                            "01_prod": {
+                                "@type": "String",
+                                "data": "01_star"
+                            },
+                            "03_prod": {
+                                "@type": "String",
+                                "data": "01_star"
+                            },
+                            "02_prod": {
+                                "@type": "String",
+                                "data": "01_star"
+                            },
+                            "01_star": {
+                                "@type": "String",
+                                "data": "01_star"
+                            },
+                            "03_star": {
+                                "@type": "String",
+                                "data": "01_star"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "id": "c2484edc-e1d3-4f0d-9c4b-16d7361d14b7",
+        "title_code": "ru.nptst",
+        "code": "test_override_omega",
+        "friendly_name": "applied first"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [
+                    {
+                        "type": "FIXED",
+                        "value": "60",
+                        "vc_currency": "gold",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "test_product_discount_vc_price": {
+                "discounts": [
+                    {
+                        "type": "FIXED",
+                        "value": "60",
+                        "vc_currency": "gold",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "fc37bd25-c336-40ad-8ac7-91f793a54664",
+        "title_code": "ru.nptst",
+        "code": "test_discount_excess_fixed_vc_override",
+        "friendly_name": "exc fixed vc discount"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [],
+                "fields": {
+                    "friendly_name": "overridden",
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "d2aa9757-0c8f-4770-8695-956283ab228a",
+        "title_code": "ru.nptst",
+        "code": "test_blank_bool_fields_override",
+        "friendly_name": "no fields"
+    },
+    {
+        "overrides": {
+            "test_product_discount_vc_and_real_price": {
+                "discounts": [
+                    {
+                        "type": "PCT_PRO",
+                        "value": "10",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "test_product_discount_real_price": {
+                "discounts": [
+                    {
+                        "type": "PCT_PRO",
+                        "value": "10",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "*": {
+                "discounts": [
+                    {
+                        "type": "PCT_PRO",
+                        "value": "10",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": "RU"
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "cc4fd95e-3fea-40d3-bc3c-cd1e5d50ece8",
+        "title_code": "ru.nptst",
+        "code": "test_discount_pct_pro_real_override",
+        "friendly_name": "pp real override"
+    },
+    {
+        "overrides": {
+            "test_product_discount_vc_and_real_price": {
+                "discounts": [
+                    {
+                        "type": "ABS",
+                        "value": "95",
+                        "vc_currency": "gold",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "*": {
+                "discounts": [
+                    {
+                        "type": "ABS",
+                        "value": "90",
+                        "vc_currency": "gold",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            },
+            "test_product_discount_vc_price": {
+                "discounts": [
+                    {
+                        "type": "ABS",
+                        "value": "95",
+                        "vc_currency": "gold",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "fff5d9c9-9995-4890-ad45-1737c68952aa",
+        "title_code": "ru.nptst",
+        "code": "test_discount_abs_vc_override",
+        "friendly_name": "abs vc discount"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [
+                    {
+                        "type": "PCT_PRO",
+                        "value": "20",
+                        "vc_currency": "gold",
+                        "rm_zone": "foobar",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "7179abce-a5e2-4d6f-97aa-52dbfcd56cf8",
+        "title_code": "ru.nptst",
+        "code": "test_discount_pct_pro_with_zone_and_vc_override",
+        "friendly_name": "discount zone vc"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [
+                    {
+                        "type": "FIXED",
+                        "value": "10",
+                        "vc_currency": "gold",
+                        "rm_zone": "",
+                        "rm_country": "US"
+                    }
+                ],
+                "fields": {
+                    "metadata": {},
+                    "visible": true
+                },
+                "limited_quantity": true,
+                "limited_quantity_settings": {
+                    "personal_limit": 10
+                }
+            }
+        },
+        "id": "b8b15f59-09c0-49e9-879a-b7d15afde8e5",
+        "title_code": "ru.nptst",
+        "code": "test_discount_real_money",
+        "friendly_name": "discount real money"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [
+                    {
+                        "type": "FIXED",
+                        "value": "10",
+                        "vc_currency": "gold",
+                        "rm_zone": "",
+                        "rm_country": "US"
+                    }
+                ],
+                "fields": {
+                    "metadata": {},
+                    "visible": true
+                },
+                "limited_quantity": true,
+                "limited_quantity_settings": {
+                    "personal_limit": 1
+                }
+            }
+        },
+        "id": "b8b15f59-09c0-49e9-123a-b7d15afde8e5",
+        "title_code": "ru.nptst",
+        "code": "override_1",
+        "friendly_name": "first discount for promo"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [
+                    {
+                        "type": "FIXED",
+                        "value": "20",
+                        "vc_currency": "gold",
+                        "rm_zone": "",
+                        "rm_country": "US"
+                    }
+                ],
+                "fields": {
+                    "metadata": {},
+                    "visible": true
+                },
+                "limited_quantity": false
+            }
+        },
+        "id": "b8b15f59-09c0-49e9-321a-b7d15afde8e5",
+        "title_code": "ru.nptst",
+        "code": "override_2",
+        "friendly_name": "second discount for promo"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [
+                    {
+                        "type": "FIXED",
+                        "value": "10",
+                        "vc_currency": "gold",
+                        "rm_zone": "",
+                        "rm_country": "US"
+                    }
+                ],
+                "fields": {
+                    "metadata": {},
+                    "visible": true
+                },
+                "limited_quantity": true,
+                "limited_quantity_settings": {
+                    "personal_limit": 1
+                }
+            }
+        },
+        "id": "baca49d3-9d28-46d0-9085-77842f182931",
+        "title_code": "ru.nptst",
+        "code": "override_with_discount",
+        "friendly_name": "first override with discount"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [],
+                "fields": {
+                    "metadata": {},
+                    "visible": true
+                },
+                "limited_quantity": false
+            }
+        },
+        "id": "5a5f9a76-a768-4ee6-889f-178df3beec33",
+        "title_code": "ru.nptst",
+        "code": "override_without_discount",
+        "friendly_name": "second override without discount"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [],
+                "fields": {
+                    "metadata": {},
+                    "visible": true
+                }
+            }
+        },
+        "id": "fd8a94b8-344b-4fb9-ac48-50e2810af662",
+        "title_code": "ru.nptst",
+        "code": "override_make_visible",
+        "friendly_name": "override which makes product visible"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [],
+                "fields": {
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "c16d448b-fbdb-4ae9-8455-8f401f3513dd",
+        "title_code": "ru.nptst",
+        "code": "override_make_visible_via_storefront",
+        "friendly_name": "override which makes product visible via storefront"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [
+                    {
+                        "type": "FIXED",
+                        "value": "60",
+                        "vc_currency": "",
+                        "rm_zone": "",
+                        "rm_country": ""
+                    }
+                ],
+                "fields": {
+                    "categories": [
+                        "category_frontline_root",
+                        "category_tanks_heavy",
+                        "category_tanks_medium"
+                    ]
+                }
+            }
+        },
+        "id": "c16d448b-fbdb-4ae9-8475-8f401f3513dd",
+        "title_code": "ru.nptst",
+        "code": "override_with_categories",
+        "friendly_name": "Override With Categories"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [],
+                "fields": {
+                    "metadata": {}
+                }
+            }
+        },
+        "id": "a93eb919-094d-4886-8857-d4741b2718f9",
+        "title_code": "ru.nptst",
+        "code": "override_without_categories",
+        "friendly_name": "Override Without Categories"
+    },
+    {
+        "overrides": {
+            "*": {
+                "discounts": [],
+                "fields": {
+                    "metadata": {},
+                    "categories": []
+                }
+            }
+        },
+        "id": "6e0ec078-5895-4666-b688-5c8230919f23",
+        "title_code": "ru.nptst",
+        "code": "override_with_empty_category",
+        "friendly_name": "Override With Empty Categories Field"
+    },
+    {
+        "overrides": {
+            "test_product_with_categories_changed_by_promo": {
+                "fields": {
+                    "categories": ["test_category_b"]
+                }
+            },
+            "test_product_with_category_not_in_storefront": {
+                "fields": {
+                    "categories": ["test_category_b"]
+                }
+            }
+        },
+        "id": "54e1c615-dfd4-4aba-a90d-4c156bb0b894",
+        "title_code": "ru.nptst",
+        "code": "override_change_product_categories",
+        "friendly_name": "override which changes product categories"
+    }
+]

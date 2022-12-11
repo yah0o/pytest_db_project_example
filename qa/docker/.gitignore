@@ -1,0 +1,2 @@
+.pytest_cache
+wiremock/__files/catalogs/*.zip

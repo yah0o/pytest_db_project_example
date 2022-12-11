@@ -1,0 +1,71 @@
+[
+    {
+        "currency_id": "4b29bd58-8f41-4e44-8cd7-6c8000aab630",
+        "metadata": {
+            "wot": {
+                "type": {
+                    "data": "custom/free_xp",
+                    "@type": "String"
+                }
+            }
+        },
+        "currency_code": "gold",
+        "type": "VIRTUAL",
+        "friendly_name": "Shared Gold",
+        "fraction_digit_count": 0,
+        "active": true,
+        "reported": true,
+        "exchange": {},
+        "mediafiles": {
+            "image_large": {
+                "en": {
+                    "mediatype": "image",
+                    "url": "http://large.bla.en"
+                },
+                "value": {
+                    "mediatype": "image",
+                    "url": "http://large.bla"
+                }
+            },
+            "image_small": {
+                "en": {
+                    "mediatype": "image",
+                    "url": "http://small.bla.en"
+                },
+                "value": {
+                    "mediatype": "image",
+                    "url": "http://small.bla"
+                }
+            }
+        },
+        "localizations": {
+            "title": {
+                "en": {
+                    "value": "Gun"
+                },
+                "ru": {
+                    "value": "Пушка"
+                }
+            },
+            "description": {
+                "en": {
+                    "value": "Long gun"
+                },
+                "ru": {
+                    "value": "Длинная пушка"
+                }
+            }
+        }
+    },
+    {
+        "currency_id": "a1c9e64a-e2cc-4282-830d-67643afa79cf",
+        "metadata": null,
+        "currency_code": "free_xp",
+        "type": "VIRTUAL",
+        "friendly_name": "Test XP shared",
+        "fraction_digit_count": 0,
+        "active": true,
+        "reported": true,
+        "exchange": {}
+    }
+]

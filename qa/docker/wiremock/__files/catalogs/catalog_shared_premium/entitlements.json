@@ -1,0 +1,22 @@
+[
+    {
+        "entitlement_id": "4ced81a9-14b2-9876-b73f-b2b64400f1d6",
+        "entitlement_code": "premium",
+        "type": "OWNERSHIP",
+        "tags": [],
+        "friendly_name": "Premium Entitlement",
+        "max_amount": 0,
+        "relationships": [],
+        "title_code": "ru.shared_premium",
+        "catalog": "ru.nptst-MAIN-1",
+        "version": 25,
+        "reported": false,
+        "metadata": {},
+        "active": true,
+        "compensation": {
+            "type": "NONE",
+            "amount": 0
+        },
+        "max_amount_global": 0
+    }
+]

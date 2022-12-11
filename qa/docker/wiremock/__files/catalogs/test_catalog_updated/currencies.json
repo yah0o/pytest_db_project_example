@@ -1,0 +1,43 @@
+[
+    {
+        "currency_id": "6d64ca45-22e6-4eda-be69-7c6bc1b81009",
+        "metadata": {},
+        "currency_code": "gold",
+        "type": "VIRTUAL",
+        "friendly_name": "Test Gold",
+        "fraction_digit_count": 0,
+        "active": true,
+        "reported": true,
+        "exchange": {
+            "USD": {
+                "min": "10",
+                "max": "100000",
+                "default": "1000",
+                "step": 1,
+                "type": "NA_TRILOGY"
+            }
+        }
+    },
+    {
+        "currency_id": "e1297ef4-606f-4d8c-b17a-0151072ce1d6",
+        "metadata": {},
+        "currency_code": "credits",
+        "type": "VIRTUAL",
+        "friendly_name": "silver coins from tanks",
+        "fraction_digit_count": 0,
+        "active": false,
+        "reported": true,
+        "exchange": {}
+    },
+    {
+        "currency_id": "c07e3553-1cba-4f23-bafa-27273a3fd80e",
+        "metadata": {},
+        "currency_code": "xp",
+        "type": "VIRTUAL",
+        "friendly_name": "Test XP",
+        "fraction_digit_count": 0,
+        "active": false,
+        "reported": true,
+        "exchange": {}
+    }
+]

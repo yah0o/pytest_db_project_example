@@ -1,0 +1,66 @@
+[
+    {
+        "id": "43f3c84e-31b4-49cd-81fa-d04a0ded461d",
+        "title_code": "ru.nptst",
+        "catalog": "ru.nptst-MINSK-433",
+        "type": "PLACEHOLDER",
+        "code": "test_product_vc_with_entitlement_meta_receipt_json",
+        "friendly_name": "Product Entitlement Metadata Receipt Json",
+        "currencies": [],
+        "new_field": {},
+        "entitlements": [
+            {
+                "code": "test_slot",
+                "new_field": null,
+                "amount": 1,
+                "percent_value": [
+                    {
+                        "pct": 100,
+                        "code": "gold"
+                    }
+                ],
+                "expiration_type": "NONE",
+                "expiration_seconds": "0",
+                "compensation": {
+                    "type": "NONE",
+                    "amount": 0
+                },
+                "metadata": {
+                    "receipt": {
+                        "data": {
+                            "@type": "Jsonb",
+                            "key": "value"
+                        }
+                    },
+                    "new_field": null
+                }
+            }
+        ],
+        "prices": {
+            "virtual_currency_price": [
+                {
+                    "code": "gold",
+                    "amount": "100",
+                    "expiration_seconds": "0"
+                }
+            ],
+            "base_real_money_prices": {},
+            "real_money_overrides": {},
+            "variable_price": {}
+        },
+        "tags": [],
+        "giftable": false,
+        "actions": [],
+        "bonus_sets": [],
+        "spa_access": [],
+        "restricted": [],
+        "payment_group": [],
+        "notification_single_purchase": {},
+        "metadata": {},
+        "fulfillment_type": "COMPENSATION",
+        "merge_quantity": true,
+        "rewards": [],
+        "visible": false,
+        "purchasable": true
+    }
+]

@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPattern": "/api/v1/catalog_publish/([A-Z0-9]{26})/set_status/"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "success": true
+    }
+  }
+}

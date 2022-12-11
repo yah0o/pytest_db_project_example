@@ -1,0 +1,41 @@
+[
+    {
+        "id": "1c1e0ddc-f5e4-45c0-9d9b-1c94d8849b0d",
+        "code": "ent_level",
+        "entity": "entitlement",
+        "value_type": "integer",
+        "metadata": { "description": "Some text" }
+    },
+    {
+        "id": "325d3326-8753-4233-9cbe-9d929f580ae0",
+        "code": "ent_type",
+        "entity": "entitlement",
+        "value_type": "enum",
+        "enum": ["slot", "vehicle", "crew", "lootbox", "ammunition", "upgrade", "token"],
+        "metadata": {}
+    },
+    {
+        "id": "e15af6c5-8b21-4276-a95a-3e5ee9bb0792",
+        "code": "prod_campaign",
+        "entity": "product",
+        "value_type": "string",
+        "metadata": {}
+    },
+    {
+        "id": "1c1e0ddc-f5e4-45c0-9d9b-1c94d8765b0d",
+        "code": "localization",
+        "entity": "entitlement",
+        "value_type": "integer",
+        "metadata": {
+                        "name": {
+                          "@type": "LocString",
+                          "data": {
+                            "en": "Test_en",
+                            "de": "Test_de",
+                            "fr": "Test_fr",
+                            "ru": "Test_ru"
+                          }
+                        }
+                    }
+    }
+]

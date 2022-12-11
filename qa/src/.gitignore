@@ -1,0 +1,9 @@
+.allure/
+.cache/
+.idea/
+.pytest_cache/
+dist/
+*.egg-info/
+
+pytest.ini
+*.pyc

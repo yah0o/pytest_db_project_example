@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "name": "test",
+      "password_hash": "ho0ZVy5WbC+iHMUh+Nj1X9jSM0o=",
+      "hashing_algorithm": "rabbit_password_hashing_md5",
+      "tags": "administrator"
+    }
+  ],
+  "vhosts": [
+    {
+      "name": "platform"
+    }
+  ],
+  "permissions": [
+    {
+      "user": "test",
+      "vhost": "platform",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    }
+  ]
+}

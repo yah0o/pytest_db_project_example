@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/tools/api/v1/ping"
+  },
+  "response": {
+    "status": 200,
+    "body": "pong",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

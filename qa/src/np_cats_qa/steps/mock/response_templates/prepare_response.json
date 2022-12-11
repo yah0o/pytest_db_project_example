@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPattern": "/catalogs/api/v1/prepare"
+  },
+  "response": {
+    "status": $status,
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

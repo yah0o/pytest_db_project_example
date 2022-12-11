@@ -1,0 +1,42 @@
+TITLE_CODE: ru.nptst
+WOWP_TITLE_CODE: ru.wowp
+WOWS_TITLE_CODE: ru.wows
+NO_CATALOG_TITLE_CODE: no.catalog
+CATALOG_DOMAIN: 'http://wiremock:8080'
+#local
+#CATALOG_DOMAIN: 'http://localhost:8080'
+DEFAULT_CATALOG: 'test_catalog.zip'
+DEFAULT_COUPON_CATALOG: 'test_coupons_catalog.zip'
+NOT_EXIST_COUPON_CATALOG: 'test_coupons_catalog_na.zip'
+TITLE_NOT_EXIST: ru.not_existing
+TITLE_INACTIVE: ru.inactive
+TITLE_FOR_FAILED_PUBLISH: ru.failed
+
+STOREFRONT_WITH_TWO_CATEGORIES:
+  CODE: test_store_with_two_categories
+  CATEGORY_ACTIVE:
+    CODE: test_category_active
+    PARENT_CODE: test_category_expired
+    SORT_NUMBER: 2
+  CATEGORY_EXPIRED:
+    CODE: test_category_expired
+    SORT_NUMBER: 1
+
+CURRENCIES:
+  SHARED:
+    - ru.shared_currency.gold
+    - ru.shared_currency.free_xp
+  NPTST:
+    - ru.nptst.sacoin
+    - ru.nptst.xp
+    - ru.nptst.gold
+
+CURRENCIES_WITH_NON_ACTIVE:
+  SHARED:
+    - ru.shared_currency.free_xp
+    - ru.shared_currency.gold
+  NPTST:
+    - ru.nptst.credits
+    - ru.nptst.gold
+    - ru.nptst.sacoin
+    - ru.nptst.xp

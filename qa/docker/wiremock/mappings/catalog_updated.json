@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/test_catalog_updated.zip"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/octet-stream"
+    },
+    "bodyFileName": "catalogs/test_catalog_updated.zip"
+  }
+}
