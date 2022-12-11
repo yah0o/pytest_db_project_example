@@ -32,4 +32,4 @@
 ## See also
 
 * [Test environment README](../docker/README.md)
-* [Allure Test Report](https://confluence.wargaming.net/display/PLATFORM/%5BWTP%5D+Allure+Test+Report)
+

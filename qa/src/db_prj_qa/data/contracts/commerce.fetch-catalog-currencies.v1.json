@@ -1,7 +1,7 @@
 {
   "id": "commerce.fetch-catalog-currencies.v1",
   "description": "Return the list of existing currencies from title's currently active catalog",
-  "documentation": "https://jira.wargaming.net/browse/CATS-255",
+  "documentation": "",
   "trigger": {
     "type": "request.commerce.fetch-catalog-currencies.v1",
     "description": "",
@@ -170,7 +170,7 @@
     {
       "code": "common.v1.internal-server-error",
       "description": "This error appears when capi server catches an unhandled error",
-      "documentation": "https://confluence.wargaming.net/x/Hw8PHg",
+      "documentation": "",
       "severity": "CRITICAL",
       "context_schema": {
         "description": "A generic network platform error",
@@ -189,7 +189,7 @@
     {
       "code": "common.v1.client-error",
       "description": "A generic error which usually appears due to the client incorrect request",
-      "documentation": "https://confluence.wargaming.net/x/Hw8PHg",
+      "documentation": "",
       "severity": "MAJOR",
       "context_schema": {
         "description": "A generic network platform error",
@@ -208,7 +208,7 @@
     {
       "code": "common.v1.validation-error",
       "description": "This error appears when request parameters dont pass a validation check",
-      "documentation": "https://confluence.wargaming.net/x/Hw8PHg",
+      "documentation": "",
       "severity": "MAJOR",
       "context_schema": {
         "description": "Generic validation error object. Where KEY is usually name of invalid parameter and VALUE is the reason",
